@@ -195,7 +195,7 @@
         <p class="font-inter not-italic font-normal mt-4 text-xl tracking-tight text-gray-400">Tạo thiệp mời chỉ trong nháy mắt cùng Vesey
         </p>
       </div>
-      <div class="flex justify-center flex-col my-12">
+      <div class="flex justify-center flex-col mt-12">
         <div class="flex justify-center">
       <div class="flex flex-row justify-center items-center bg-gray-100 rounded-lg w-512 h-42">
         <a class="box-border flex flex-row justify-center items-center p-2 w-89 h-38 bg-white border border-gray-200 shadow-sm rounded-md cursor-pointer">
@@ -220,24 +220,178 @@
       <h2 class="sr-only">Products</h2>
 
       <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 xl:gap-x-8">
-        <a v-for="product in productSS" :key="product.id" :href="product.href" class="group">
-          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-            <img :src="product.imageSrc" :alt="product.imageAlt" class="h-full w-full object-cover object-center group-hover:opacity-75" />
-          </div>
-          <h3 class="mt-4 text-sm text-gray-700">{{ product.name }}</h3>
-          <p class="mt-1 text-lg font-medium text-gray-900">{{ product.title }}</p>
-        </a>
+        <a v-for="product in productSS" :key="product.id"  class="group relative">
+  <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7" @click="() => showOverlay(product)">
+    <img :src="product.imageSrc" :alt="product.imageAlt" class="h-full w-full object-cover object-center group-hover:opacity-75"  />
+    <div v-if="product.showOverlay" class="absolute inset-0 bg-white bg-opacity-80 flex items-center justify-center z-10">
+      <div class="flex flex-col items-center space-y-4">
+        <!-- Nội dung overlay -->
+        <button class="px-6 py-3.5 w-full bg-indigo-600 text-white rounded-3xl shadow-md hover:bg-indigo-400">Tạo thiệp mời</button>
+        <button class="px-6 py-3.5 w-full bg-white text-indigo-600 rounded-3xl border border-blue-600 shadow-sm hover:bg-gray-200">Xem mẫu thiệp</button>
       </div>
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 to-transparent opacity-100 image-background">
+      <div class="flex flex-col text-start ml-6">
+        <h3 class="mt-4 text-white font-inter font-medium text-xl not-italic">{{ product.name }}</h3>
+        <p class="mt-1 text-sm font-medium text-white font-inter not-italic">{{ product.title }}</p>
+      </div>
+    </div>
+  </div>
+</a>
+
+
+      </div>
+
     </div>
   </div>
     </div>
     </section>
+    <section class="bg-gray-50">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
+        <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
+        <h2 class="mb-4 text-3xl font-inter font-extrabold not-italic tracking-tight text-gray-900 dark:text-white">Biểu phí</h2>
+        <p class="mb-5 font-inter font-normal text-gray-500 text-xl sm:text-xl dark:text-gray-400">Hiện thực hóa kế hoạch của bạn một cách thuận lợi với những gói siêu hấp dẫn từ Vesey</p>
+        </div>
+        <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+
+        <div class="flex flex-col max-w-lg p-6 mx-auto text-start text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+        <h3 class="mb-4 text-2xl font-inter not-italic font-normal">Silver</h3>
+        <p class="font-black text-gray-900 text-5xl sm:text-3xl dark:text-gray-400">Miễn phí</p>
+        <a href="#" class="text-white font-inter my-4 bg-indigo-400 hover:bg-purple-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-md text-sm px-4 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900">Dùng ngay</a>
+          <span class="font-inter not-italic font-medium text-xs my-4 tracking-wide uppercase text-gray-900">Bao gồm:</span>
+        <ul role="list" class="mb-8 space-y-4 text-left"> 
+        <li class="flex items-center space-x-3">
+
+        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>Miễn phí 4 mẫu thiệp mời.</span>
+        </li>
+        <li class="flex items-center space-x-3">
+
+        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>Chỉnh sửa thiệp mời theo ý của bạn.</span>
+        </li>
+        <li class="flex items-center space-x-3">
+
+        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>Tạo QR và đường dẫn riêng.</span>
+        </li>
+        <li class="flex items-center space-x-3">
+
+        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>Upload tối đa 1GB ảnh và video cưới.</span>
+        </li>
+        <li class="flex items-center space-x-3">
+
+        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>Không giới hạn trang được tạo.</span>
+        </li>
+        <li class="flex items-center space-x-3">
+
+        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>3 tháng lưu trữ thiệp cưới trên Vesey.</span>
+        </li>
+        </ul>
+        
+        </div>
+
+        <div class="flex flex-col max-w-lg p-6 mx-auto text-start text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+        <h3 class="mb-4 text-2xl font-inter not-italic font-normal">Gold</h3>
+        <p class="font-black text-gray-900 text-5xl sm:text-3xl dark:text-gray-400">500.000 VND</p>
+        <a href="#" class="text-white font-inter my-4 bg-indigo-400 hover:bg-purple-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-md text-sm px-4 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900">Dùng ngay</a>
+          <span class="font-inter not-italic font-medium text-xs my-4 tracking-wide uppercase text-gray-900">Bao gồm:</span>
+        <ul role="list" class="mb-8 space-y-4 text-left">
+        <li class="flex items-center space-x-3">
+
+        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>Miễn phí 8 mẫu thiệp mời.</span>
+        </li>
+        <li class="flex items-center space-x-3">
+
+        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>Chỉnh sửa thiệp mời theo ý của bạn.</span>
+        </li>
+        <li class="flex items-center space-x-3">
+
+        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>Tạo QR và đường dẫn riêng.</span>
+        </li>
+        <li class="flex items-center space-x-3">
+
+        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>Upload tối đa 5GB ảnh và video cưới.</span>
+        </li>
+        <li class="flex items-center space-x-3">
+
+        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>Không giới hạn trang được tạo</span>
+        </li>
+        <li class="flex items-center space-x-3">
+
+        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>1 năm lưu trữ thiệp cưới trên Vesey.</span>
+        </li>
+        </ul>
+        
+        </div>
+
+        <div class="flex flex-col max-w-lg p-6 mx-auto text-start text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+        <h3 class="mb-4 text-2xl font-inter not-italic font-normal">Platinum</h3>
+        <p class="font-black text-gray-900 text-5xl sm:text-3xl dark:text-gray-400">2 triệu VND</p>
+        <a href="#" class="text-white font-inter my-4 bg-indigo-400 hover:bg-purple-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-md text-sm px-4 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900">Dùng ngay</a>
+        <span class="font-inter not-italic font-medium text-xs my-4 tracking-wide uppercase text-gray-900">Bao gồm:</span>
+        <ul role="list" class="mb-8 space-y-4 text-left">
+        <li class="flex items-center space-x-3">
+
+        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>Miễn phí 8 mẫu thiệp mời.</span>
+        </li>
+        <li class="flex items-center space-x-3">
+
+        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>Chỉnh sửa thiệp mời theo ý của bạn.</span>
+        </li>
+        <li class="flex items-center space-x-3">
+
+        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>Tạo QR và đường dẫn riêng.</span>
+        </li>
+        <li class="flex items-center space-x-3">
+
+        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>Không giới hạn dung lượng upload ảnh và video cưới.</span>
+        </li>
+        <li class="flex items-center space-x-3">
+
+        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>Không giới hạn trang được tạo</span>
+        </li>
+        <li class="flex items-center space-x-3">
+
+        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>Trọn đời lưu trữ thiệp cưới trên Vesey.</span>
+        </li>
+        <li class="flex items-center space-x-3">
+
+        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>Hỗ trợ mua tên miền riêng (VD: tenhaiban.com).</span>
+        </li>
+        <li class="flex items-center space-x-3">
+
+        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>Hỗ trợ bởi chuyên viên Vesey.</span>
+        </li>
+        </ul>
+        
+        </div>
+        </div>
+        </div>
+</section>
   </main>
 </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, reactive  } from 'vue'
 import {
   Dialog,
   DialogPanel,
@@ -273,58 +427,63 @@ const callsToAction = [
 ]
 
 const mobileMenuOpen = ref(false)
-const productSS = [
+const productSS = reactive([
+
   {
     id: 1,
     name: 'Thiệp truyền thống',
-    href: '#',
     title: 'Thiệp cưới',
     imageSrc: require('.//assets/1.jpg'),
     imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+    showOverlay: ref(false)
   },
   {
     id: 2,
     name: 'Thiệp truyền thống',
-    href: '#',
     title: 'Thiệp cưới',
     imageSrc: require('.//assets/2.jpg'),
     imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+    showOverlay: ref(false)
   },
   {
     id: 3,
     name: 'Thiệp truyền thống',
-    href: '#',
     title: 'Thiệp cưới',
     imageSrc: require('.//assets/3.jpg'),
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+    showOverlay: ref(false)
   },
   {
     id: 4,
     name: 'Thiệp truyền thống',
-    href: '#',
     price: 'Thiệp cưới',
     imageSrc: require('.//assets/4.jpg'),
     imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+    showOverlay: ref(false)
   },
   {
     id: 5,
     name: 'Thiệp truyền thống',
-    href: '#',
     price: 'Thiệp cưới',
     imageSrc: require('.//assets/5.jpg'),
     imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+    showOverlay: ref(false)
   },
   {
     id: 6,
     name: 'Thiệp truyền thống',
-    href: '#',
     price: 'Thiệp cưới',
     imageSrc: require('.//assets/6.jpg'),
     imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+    showOverlay: ref(false)
   },
-]
+])
+const showOverlay = (product) => {
+  product.showOverlay = !product.showOverlay;
+  console.log(product.showOverlay);
+  
+}
 </script>
-
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Viaoda+Libre&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');

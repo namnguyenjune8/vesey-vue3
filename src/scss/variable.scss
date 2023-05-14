@@ -15,9 +15,7 @@ $primarycolor: #F5F5F5;
 .w-105 {
   width: 105%;
 }
-.w-413 {
-  width: 413px;
-}
+
 .w-350 {
   width: 350px;
 }
@@ -33,11 +31,13 @@ $primarycolor: #F5F5F5;
 .h-42 {
   height: 42px;
 }
-.h-192 {
-  height: 192px;
-} 
+
 .h-265 {
   height: 265px;
+}
+.image-font {
+    width: 413px;
+    height: 192px; 
 }
 .invitation_template_section {
   background-color: white;
@@ -81,7 +81,7 @@ $primarycolor: #F5F5F5;
   transform: scaleX(0.5);
 }
 .boder-image::after {
-  background-image: url("./assets/0.2.jpg");
+  // background-image: url("./assets/0.2.jpg");
   content: "";
   display: none;
   height: 70%;
@@ -269,5 +269,170 @@ $primarycolor: #F5F5F5;
   .paddingLR {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+@media screen and (min-width:475px) and (max-width:499px){
+  .paddingLR {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .image-font {
+    width: 390px;
+    height: 160px;
+
+  }
+}
+@media screen and (min-width:461px) and (max-width:474px){
+  .paddingLR {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .image-font {
+    width: 410px;
+    height: 190px;
+
+  }
+}
+@media screen and (min-width:456px) and (max-width:460px){
+  .paddingLR {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .image-font {
+    width: 430px;
+    height: 190px;
+
+  }
+}
+@media screen and (min-width:450px) and (max-width:455px){
+  .paddingLR {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .image-font {
+    width: 430px;
+    height: 190px;
+
+  }
+}
+@media screen and (min-width:440px) and (max-width:449px){
+  .paddingLR {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .image-font {
+    width: 430px;
+    height: 190px;
+
+  }
+}
+@media screen and (min-width:425px) and (max-width:439px){
+  .paddingLR {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .image-font {
+    width: 430px;
+    height: 190px;
+
+  }
+}
+@media screen and (min-width:406px) and (max-width:424px){
+  .paddingLR {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .image-font {
+    width: 430px;
+    height: 190px;
+
+  }
+}
+@media screen and (min-width:391px) and (max-width:405px){
+  .paddingLR {
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+  }
+  .image-font {
+    width: 430px;
+    height: 190px;
+
+  }
+}
+@media screen and (min-width:385px) and (max-width:390px){
+  .paddingLR {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .image-font {
+    width: 430px;
+    height: 190px;
+
+  }
+}
+@media screen and (min-width:380px) and (max-width:384px){
+  .paddingLR {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .image-font {
+    width: 430px;
+    height: 190px;
+
+  }
+}
+@media screen and (min-width:371px) and (max-width:379px){
+  .paddingLR {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .image-font {
+    width: 430px;
+    height: 190px;
+
+  }
+}
+@media screen and (min-width:361px) and (max-width:370px){
+  .paddingLR {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .image-font {
+    width: 430px;
+    height: 190px;
+
+  }
+}
+@media screen and (min-width:341px) and (max-width:360px){
+  .paddingLR {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .image-font {
+    width: 430px;
+    height: 190px;
+
+  }
+}
+@media screen and (min-width:321px) and (max-width:340px){
+  .paddingLR {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .image-font {
+    width: 430px;
+    height: 190px;
+
+  }
+}
+@media screen and (min-width:300px) and (max-width:320px){
+  .paddingLR {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+  }
+  .image-font {
+    width: 430px;
+    height: 190px;
+
   }
 }

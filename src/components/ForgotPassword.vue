@@ -1,0 +1,43 @@
+<template>
+    <!-- component -->
+    
+
+    
+    <section class="flex flex-col md:flex-row h-screen items-center">
+    <img class="h-12 w-auto absolute logo-image cursor-pointer" src="../assets/Logo.svg" alt="" />
+<div class="bg-white w-full md:max-w-md lg:max-w-full md:mx-auto  md:w-1/2 xl:w-1/2 h-screen p-20 px-6 lg:px-16 xl:px-40 max-md:pb-16   
+      flex items-center justify-center pt-40">
+
+  <div class="w-full h-100">
+
+
+    <h1 class="text-3xl md:text-5xl font-normal font-inter leading-tight mt-12 pb-4">Quên mật khẩu</h1>
+    <span class="font-inter font-normal text-base text-gray-400 ">Vui lòng nhập email bạn đã đăng ký tại đây và chúng tôi sẽ gửi link đặt lại mật khẩu vào email của bạn.</span>
+
+    <form class="mt-6" action="#" method="POST">
+      <div>
+        <label class="block text-gray-700">Email</label>
+        <input type="email" name="" id="" placeholder="Nhập Email của bạn" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none" autofocus autocomplete required>
+      </div>
+      <a href="/sendLink-to-email" type="submit" class="w-full block bg-indigo-500 hover:bg-indigo-400 focus:bg-indigo-400 text-white font-semibold rounded-lg
+            px-4 py-3 mt-6">Đặt lại mật khẩu</a>
+    </form>
+
+    <p class="mt-8 flex justify-center">Bạn chưa có tài khoản? <a href="/signup" class="text-blue-500 hover:text-blue-700 font-semibold">Tạo tài khoản</a></p>
+
+
+  </div>
+</div>
+<div class="hidden lg:block w-full md:w-1/2 xl:w-1/2 h-screen  p-4">
+  <img src="../assets/forgotpass.svg" alt="" class="w-full h-full object-none boder-radius-40px ">
+</div>
+
+</section>
+</template>
+
+<script>
+
+</script>
+<style lang="scss">
+
+</style>

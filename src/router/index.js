@@ -1,7 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import Homepage from '@/components/Homepage.vue'
-// import TodoApp from '@/components/TodoApp.vue'
+import Login from '@/components/Login.vue'
+import SignUp from '@/components/SignUp.vue'
+import ForgorPassword from '@/components/ForgotPassword.vue'
+import LinkToEmail from '@/components/LinkToEmail.vue'
 
 
 const routes = [
@@ -9,6 +12,26 @@ const routes = [
     path: '/' ,
     name: 'HomePage',
     component: Homepage
+  },
+  {
+    path: '/login' ,
+    name: 'Login',
+    component: Login
+  },
+  {
+    path: '/signup' ,
+    name: 'SignUp',
+    component: SignUp
+  },
+  {
+    path: '/remakepassword' ,
+    name: 'ForgotPassword',
+    component: ForgorPassword
+  },
+  {
+    path: '/sendlinktoemail' ,
+    name: 'LinkToEmail',
+    component: LinkToEmail
   },
   
   // {

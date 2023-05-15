@@ -1,4 +1,4 @@
-
+@import 'login';
 $primarycolor: #F5F5F5;
 .app-container {
   background-color: $primarycolor;
@@ -81,7 +81,7 @@ $primarycolor: #F5F5F5;
   transform: scaleX(0.5);
 }
 .boder-image::after {
-  // background-image: url("./assets/0.2.jpg");
+  background-image: url("../assets/0.2.jpg");
   content: "";
   display: none;
   height: 70%;

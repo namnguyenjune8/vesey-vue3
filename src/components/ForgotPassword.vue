@@ -14,12 +14,13 @@
     <h1 class="text-3xl md:text-5xl font-normal font-inter leading-tight mt-12 pb-4">Quên mật khẩu</h1>
     <span class="font-inter font-normal text-base text-gray-400 ">Vui lòng nhập email bạn đã đăng ký tại đây và chúng tôi sẽ gửi link đặt lại mật khẩu vào email của bạn.</span>
 
-    <form class="mt-6" action="#" method="POST">
+    <form @submit.prevent="resetPassword" class="mt-6" action="#" method="POST">
       <div>
         <label class="block text-gray-700">Email</label>
-        <input type="email" name="" id="" placeholder="Nhập Email của bạn" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none" autofocus autocomplete required>
+        <input type="email" name="" id="" placeholder="Nhập Email của bạn" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white 
+        focus:outline-none" v-model="email" autofocus autocomplete required>
       </div>
-      <a href="/sendLink-to-email" type="submit" class="w-full block bg-indigo-500 hover:bg-indigo-400 focus:bg-indigo-400 text-white font-semibold rounded-lg
+      <a href="/sendlinktoemail" type="submit" class="w-full block bg-indigo-500 hover:bg-indigo-400 focus:bg-indigo-400 text-white font-semibold rounded-lg
             px-4 py-3 mt-6">Đặt lại mật khẩu</a>
     </form>
 
@@ -36,7 +37,35 @@
 </template>
 
 <script>
-
+import axios from 'axios';
+export default {
+  data() {
+    return {
+      email: '',
+    };
+  },
+  methods: {
+    async resetPassword() {
+      try {
+        const response = await axios.post('https://dev.vesey.vn/api/auth/forgot-password', {
+          email: this.email,
+        });
+        if (response.status === 200 && response.data.token) {
+        alert('Yêu cầu đặt lại mật khẩu đã được gửi đến email của bạn');
+        // Xử lý phản hồi thành công từ máy chủ (response)
+        // Ví dụ: hiển thị thông báo cho người dùng
+        }
+        else {
+            throw new Error('Invalid error!');
+          }
+      } catch (error) {
+        // Xử lý lỗi từ máy chủ (error)
+        alert('Email không tồn tại!');
+        console.log(error);
+      }
+    }
+  }
+}
 </script>
 <style lang="scss">
 

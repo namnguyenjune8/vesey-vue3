@@ -48,6 +48,14 @@ $primarycolor: #F5F5F5;
     padding: 9px 13px;
     margin: -1px -1px;
 }
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 .image-background {
     height: 7rem;
     margin-top: calc(100% - 4%);

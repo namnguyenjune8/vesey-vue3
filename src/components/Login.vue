@@ -14,16 +14,17 @@
     <h1 class="text-3xl md:text-5xl font-normal font-inter leading-tight mt-12">Xin chào!</h1>
     <span class="font-inter font-normal text-base text-gray-400">Vui lòng đăng nhập vào tài khoản của bạn.</span>
 
-    <form class="mt-6" action="#" method="POST">
+    <form @submit.prevent="login" class="mt-6" action="#" method="POST">
       <div>
         <label class="block text-gray-700">Email</label>
-        <input type="email" name="" id="" placeholder="Nhập Email của bạn" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none" autofocus autocomplete required>
+        <input type="email" name="email" id="" placeholder="Nhập Email của bạn" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border 
+        focus:border-blue-500 focus:bg-white focus:outline-none" v-model="email" autofocus autocomplete required>
       </div>
 
       <div class="mt-4">
         <label class="block text-gray-700">Mật khẩu</label>
         <input type="password" name="" id="" placeholder="Nhập mật khẩu của bạn" minlength="6" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500
-              focus:bg-white focus:outline-none" required>
+              focus:bg-white focus:outline-none" v-model="password" required>
       </div>
 
       <div class="text-right mt-2 flex flex-row justify-between items-center ">
@@ -32,11 +33,13 @@
                 <input type="checkbox" name="remember" id="" class=" w-4 h-4  ">
                 <label for="" class="text-base text-center  not-italic text-gray-900">Lưu đăng nhập</label>
             </div>
-        <a href="#" class="text-sm font-semibold text-gray-700 hover:text-blue-700 focus:text-blue-700">Quên mật khẩu?</a>
+        <a href="/resetpassword" class="text-sm font-semibold text-gray-700 hover:text-blue-700 focus:text-blue-700">Quên mật khẩu?</a>
       </div>
 
       <button type="submit" class="w-full block bg-indigo-500 hover:bg-indigo-400 focus:bg-indigo-400 text-white font-semibold rounded-lg
             px-4 py-3 mt-6">Đăng nhập</button>
+            <div v-if="errorMessage" class="error">{{ errorMessage }}</div>
+            <div v-if="successMessage" class="success">{{ successMessage }}</div>
     </form>
 
     <hr class="my-6 border-gray-300 w-full">
@@ -61,9 +64,47 @@
 </section>
 </template>
 
-<script>
-
-</script>
+  <script>
+  import axios from 'axios'
+  import jwt_decode from 'jwt-decode';
+  export default {
+    data() {
+      return {
+        email: '',
+        password: '',
+        errorMessage: '',
+        successMessage: '',
+      };
+    },
+    methods: {
+      async login() {
+        try {
+          const response = await axios.post('https://dev.vesey.vn/api/auth/login', {
+            email: this.email,
+            password: this.password,
+          });
+          
+          if (response.status === 200 && response.data.token) {
+            localStorage.setItem('accessToken', response.data.token);
+            
+            // Giải mã token và lưu thông tin người dùng vào localStorage
+            const tokenData = response.data.token.split(' ')[1];
+            const decodedToken = jwt_decode(tokenData);
+            localStorage.setItem('userId', decodedToken.id);
+            this.successMessage = 'Logged in successfully';
+            this.$router.push('/');
+            
+          } else {
+            throw new Error('Invalid login');
+          }
+        } catch (error) {
+          console.log(error)
+          this.errorMessage = 'User or password is incorrect'
+        }
+      }
+    }
+  }
+  </script>
 <style lang="scss">
 
 </style>

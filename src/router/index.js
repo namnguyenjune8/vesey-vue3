@@ -24,7 +24,7 @@ const routes = [
     component: SignUp
   },
   {
-    path: '/remakepassword' ,
+    path: '/resetpassword' ,
     name: 'ForgotPassword',
     component: ForgorPassword
   },

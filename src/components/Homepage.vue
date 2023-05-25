@@ -14,9 +14,11 @@
   
           </span>
         </h1>
-            <p class=" mt-6 max-w-2xl max-md:text-center px-4 text-lg sm:px-14 lg:px-14 tracking-tight text-slate-700 text-left">Tùy ý tạo và chỉnh sửa thiệp mới dạng landing page một cách dễ dàng, nhanh chóng theo cách riêng của bạn.</p>
+            <p class=" mt-6 max-w-2xl max-md:text-center px-4 text-lg sm:px-14 lg:px-14 tracking-tight text-slate-700 text-left ">Tùy ý tạo và chỉnh sửa thiệp mới dạng landing page một cách dễ dàng, nhanh chóng theo cách riêng của bạn.</p>
             <div class="mt-10 flex justify-start gap-x-6 ml-14 max-md:ml-0 max-md:justify-center">
-              <a type="submit" class="flex-none rounded-md  bg-indigo-500 px-9 py-4 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Tạo thiệp mời</a>
+              <a type="submit" class="flex-none rounded-md  bg-indigo-500 px-9 py-4 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 first-letter
+              transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 cursor-pointer
+              ">Tạo thiệp mời</a>
             </div>
             <div class="mt-36 lg:mt-44">
               
@@ -83,11 +85,11 @@
           <a v-for="product in productSS" :key="product.id"  class="group relative">
     <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7" @mouseenter="showOverlay(product)" @mouseleave="hideOverlay(product)">
       <img :src="product.imageSrc" :alt="product.imageAlt" class="h-full w-full object-cover object-center relative"  />
-      <div v-if="product.showOverlay" class="absolute inset-0 bg-white bg-opacity-80 flex items-center justify-center z-10">
+      <div v-if="product.showOverlay" class="absolute inset-0 bg-white bg-opacity-80 flex items-center justify-center z-10 ">
         <div class="flex flex-col items-center space-y-4 ">
           <!-- Nội dung overlay -->
-          <button class="px-6 py-3.5 w-full bg-indigo-600 text-white rounded-3xl shadow-md hover:bg-indigo-400">Tạo thiệp mời</button>
-          <button class="px-6 py-3.5 w-full bg-white text-indigo-600 rounded-3xl border border-blue-600 shadow-sm hover:bg-gray-200">Xem mẫu thiệp</button>
+          <button class="px-6 py-3.5 w-full bg-indigo-600 text-white rounded-3xl shadow-md hover:bg-indigo-400 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Tạo thiệp mời</button>
+          <button class="px-6 py-3.5 w-full bg-white text-indigo-600 rounded-3xl border border-blue-600 shadow-sm hover:bg-gray-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Xem mẫu thiệp</button>
         </div>
       </div>
       <div class="absolute top-auto pb-8 bottom-0 inset-0 bg-gradient-to-t from-neutral-950 to-transparent opacity-100">

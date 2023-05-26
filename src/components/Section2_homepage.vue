@@ -1,17 +1,25 @@
 <template>
     <section class="invitation_template_section"
-             data-aos="fade-up"
-             data-aos-duration="1000"
+             
     >
         <div class="mx-auto max-w-2xl text-center pt-24">
-          <h2 class="font-inter not-italic font-extrabold text-4xl tracking-tight text-slate-900 sm:text-3xl">MẪU THIỆP MỜI
+          <h2 class="font-inter not-italic font-extrabold text-4xl tracking-tight text-slate-900 sm:text-3xl" 
+             data-aos="fade-up"
+             data-aos-duration="1000"
+          >MẪU THIỆP MỜI
           </h2>
-          <p class="font-inter not-italic font-normal mt-4 text-xl tracking-tight text-gray-400">Tạo thiệp mời chỉ trong nháy mắt cùng Vesey
+          <p class="font-inter not-italic font-normal mt-4 text-xl tracking-tight text-gray-400"
+             data-aos="fade-up"
+             data-aos-duration="1500"
+          >Tạo thiệp mời chỉ trong nháy mắt cùng Vesey
           </p>
         </div>
         <div class="flex justify-center flex-col mt-12">
           <div class="my-7 flex justify-center">
-    <div class="flex flex-row space-x-2 bg-gray-200 rounded-md p-1">
+    <div class="flex flex-row space-x-2 bg-gray-200 rounded-md p-1"
+             data-aos="fade-up"
+             data-aos-duration="2000"
+    >
       <label class="flex items-center py-1 px-4 bg-gray-200 cursor-pointer label_checked">
         <input class="hidden" type="radio" checked value="all">
         <span class="text-gray-700">Tất cả</span>
@@ -37,7 +45,8 @@
   
         <div class="bg-white">
       <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8"
-      data-aos="fade-up"
+             data-aos="fade-up"
+             data-aos-duration="2500"
       >
         <h2 class="sr-only">Products</h2>
   

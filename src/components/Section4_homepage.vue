@@ -2,7 +2,11 @@
     <section class="bg-white pb-12">
       <div class="container  min-[500px]:px-8 mx-auto xl:px-5 bg-white  py-6 lg:py-14">
         <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
-          <h2 class="mb-4 text-3xl font-inter font-extrabold not-italic tracking-tight text-gray-900 dark:text-white">Bài viết từ Vesey</h2>
+          <h2 class="mb-4 text-3xl font-inter font-extrabold not-italic tracking-tight text-gray-900 dark:text-white">
+            
+            <span class="typed-text decoration-1"></span>
+              <span class="cursor">&nbsp;</span>
+          </h2>
         </div>
                 <div class="mt-10 grid gap-10 md:grid-cols-2 lg:gap-10 xl:grid-cols-3 paddingLR">
                  <div class="group cursor-pointer bg-white shadow-lg rounded-2xl relative min-[456px]:w-full min-[450px]:w-11/12 min-[385px]:w-10/12 min-[300px]:w-9/12">
@@ -146,8 +150,55 @@
 </template>
 <script>
 export default {
-    
-}
+  mounted() {
+    const typedTextSpan = document.querySelector(".typed-text");
+    const cursorSpan = document.querySelector(".cursor");
+
+    const textArray = [ "Bài viết từ Vesey"];
+    const typingDelay = 50;
+    const erasingDelay = 50;
+    const newTextDelay = 500;
+    let textArrayIndex = 0;
+    let charIndex = 0;
+
+    function type() {
+      if (charIndex < textArray[textArrayIndex].length) {
+        if (!cursorSpan.classList.contains("typing"))
+          cursorSpan.classList.add("typing");
+        typedTextSpan.textContent += textArray[textArrayIndex].charAt(
+          charIndex
+        );
+        charIndex++;
+        setTimeout(type, typingDelay);
+      } else {
+        cursorSpan.classList.remove("typing");
+        setTimeout(erase, newTextDelay);
+      }
+    }
+
+    function erase() {
+      if (charIndex > 0) {
+        if (!cursorSpan.classList.contains("typing"))
+          cursorSpan.classList.add("typing");
+        typedTextSpan.textContent = textArray[textArrayIndex].substring(
+          0,
+          charIndex - 1
+        );
+        charIndex--;
+        setTimeout(erase, erasingDelay);
+      } else {
+        cursorSpan.classList.remove("typing");
+        textArrayIndex++;
+        if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+        setTimeout(type, typingDelay + 1100);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      if (textArray.length) setTimeout(type, newTextDelay + 250);
+    });
+  },
+};
 </script>
 <style lang="scss">
     

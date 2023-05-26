@@ -1,7 +1,12 @@
 <template >
     <section >
         <div class="mx-auto max-w-7xl px-4 sm:px-6 pt-20 text-center lg:pt-12 gap-4 flex max-md:pb-8 pb-24 ">
-          <div class="w-2/3 max-md:w-full">
+          <div class="w-2/3 max-md:w-full"
+                data-aos="fade-right"
+                data-aos-offset="500"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="1000"
+          >
           <h1 class="lg:text-7xl max-md:text-center md:text-5xl max-sm:text-5xl font-viaoda-libre font-normal text-88 leading-126 uppercase tracking-tight text-gray-900 max-md:text-6xl md:ml-12 text-left">
             <span class="block">TẠO THIỆP MỜI</span>
             <span class="block">ONLINE HIỆN ĐẠI</span>
@@ -12,7 +17,8 @@
           </span>
         </h1>
             <p class=" mt-6 max-w-2xl max-md:text-center px-4 text-lg sm:px-14 lg:px-14 tracking-tight text-slate-700 text-left ">
-              <span class="typed-text decoration-1"></span><span class="cursor">&nbsp;</span>
+              Tùy ý tạo và chỉnh sửa thiệp mời dạng landing page một cách dễ dàng, nhanh chóng theo cách riêng của bạn.
+              
              </p>
             <div class="mt-10 flex justify-start gap-x-6 ml-14 max-md:ml-0 max-md:justify-center">
               <a type="submit" class="flex-none rounded-md  bg-indigo-500 px-9 py-4 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 first-letter
@@ -24,7 +30,13 @@
             </div>
           </div>
   
-          <div class="w-1/3 max-md:hidden	 text-center md:text-right relative mt-12">
+          <div class="w-1/3 max-md:hidden	 text-center md:text-right relative mt-12"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine"
+          >
           <div class="boder-image  md:mr-24 inline-block">
             <span class="image-section-1 z-10">
   
@@ -45,56 +57,7 @@
       </section>
 </template>
 <script>
-export default {
-  mounted() {
-    const typedTextSpan = document.querySelector(".typed-text");
-    const cursorSpan = document.querySelector(".cursor");
 
-    const textArray = [ " Tùy ý tạo và chỉnh sửa thiệp mời dạng landing page một cách dễ dàng, nhanh chóng theo cách riêng của bạn."];
-    const typingDelay = 50;
-    const erasingDelay = 50;
-    const newTextDelay = 500;
-    let textArrayIndex = 0;
-    let charIndex = 0;
-
-    function type() {
-      if (charIndex < textArray[textArrayIndex].length) {
-        if (!cursorSpan.classList.contains("typing"))
-          cursorSpan.classList.add("typing");
-        typedTextSpan.textContent += textArray[textArrayIndex].charAt(
-          charIndex
-        );
-        charIndex++;
-        setTimeout(type, typingDelay);
-      } else {
-        cursorSpan.classList.remove("typing");
-        setTimeout(erase, newTextDelay);
-      }
-    }
-
-    function erase() {
-      if (charIndex > 0) {
-        if (!cursorSpan.classList.contains("typing"))
-          cursorSpan.classList.add("typing");
-        typedTextSpan.textContent = textArray[textArrayIndex].substring(
-          0,
-          charIndex - 1
-        );
-        charIndex--;
-        setTimeout(erase, erasingDelay);
-      } else {
-        cursorSpan.classList.remove("typing");
-        textArrayIndex++;
-        if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-        setTimeout(type, typingDelay + 1100);
-      }
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-      if (textArray.length) setTimeout(type, newTextDelay + 250);
-    });
-  },
-};
 </script>
 <style lang="scss">
     

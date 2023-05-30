@@ -27,10 +27,7 @@
         <a href="#" class="w-112 relative font-inter font-normal text-base leading-6 text-center text-gray-700 flex-none order-1 flex-grow-0 hover:text-indigo-500 menu-item">Biểu phí</a>
         <a href="#" class="w-112 relative font-inter font-normal text-base leading-6 text-center text-gray-700 flex-none order-1 flex-grow-0 hover:text-indigo-500 menu-item">Blog</a>
       </PopoverGroup>
-      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        
-        <a href="/login" type="submit" class="flex-none rounded-md bg-indigo-500 px-9 py-4 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Đăng nhập</a>
-      </div>
+      <Login_Avatar />
     </nav>
     <Dialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
       <div class="fixed inset-0 " />
@@ -46,8 +43,9 @@
           </button>
         </div>
         <div class="mt-6 flow-root">
-          <div class="-my-6 divide-y divide-gray-500/10">
+          <div class="-my-6 divide-y divide-gray-500/10"> 
             <div class="space-y-2 py-6">
+              <a v-if="isLoggedIn" href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-indigo-50 ">Xin chào</a>
               <Disclosure as="div" class="-mx-3" v-slot="{ open }">
                 <DisclosureButton class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50">
                   Trang chủ
@@ -62,7 +60,8 @@
               <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 ">Blog</a>
             </div>
             <div class="py-6">
-              <a href="/login" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+              <a v-if="isLoggedIn" @click="logout" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Đăng xuất</a>
+              <a v-else href="/login" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Đăng nhập</a>
             </div>
           </div>
         </div>
@@ -71,7 +70,8 @@
   </header>
 </template>
 <script setup>
-import { ref } from 'vue'
+import Login_Avatar from './Login_Avatar.vue'
+import { ref, onMounted } from 'vue'
 import {
     Dialog,
     DialogPanel,
@@ -107,6 +107,19 @@ import {
   ]
   
   const mobileMenuOpen = ref(false)
+  const isLoggedIn = ref(false)
+  const logout =() => {
+        localStorage.removeItem('accessToken');
+        localStorage.removeItem('userId');
+        window.location.href = '/';
+  };
+  onMounted(() => {
+  // Kiểm tra xem người dùng đã đăng nhập hay chưa
+  const token = localStorage.getItem('accessToken');
+  if (token) {
+    isLoggedIn.value = true;
+  }
+});
 </script>
 <style lang="scss">
     

@@ -66,7 +66,7 @@
 
   <script>
   import axios from 'axios'
-  import jwt_decode from 'jwt-decode';
+  // import jwt_decode from 'jwt-decode';
   export default {
     data() {
       return {
@@ -88,9 +88,9 @@
             localStorage.setItem('accessToken', response.data.token);
             
             // Giải mã token và lưu thông tin người dùng vào localStorage
-            const tokenData = response.data.token.split(' ')[1];
-            const decodedToken = jwt_decode(tokenData);
-            localStorage.setItem('userId', decodedToken.id);
+            // const tokenData = response.data.token.split(' ')[1];
+            // const decodedToken = jwt_decode(tokenData);
+            // localStorage.setItem('userId', decodedToken.id);
             this.successMessage = 'Logged in successfully';
             this.$router.push('/');
             

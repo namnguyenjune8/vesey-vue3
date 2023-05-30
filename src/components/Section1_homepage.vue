@@ -6,6 +6,7 @@
                 data-aos-offset="500"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="1000"
+                data-aos-anchor="#example-anchor"
           >
           <h1 class="lg:text-7xl max-md:text-center md:text-5xl max-sm:text-5xl font-viaoda-libre font-normal text-88 leading-126 uppercase tracking-tight text-gray-900 max-md:text-6xl md:ml-12 text-left">
             <span class="block">TẠO THIỆP MỜI</span>

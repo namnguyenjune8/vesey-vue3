@@ -10,10 +10,12 @@
         </div>
                 <div class="mt-10 grid gap-10 md:grid-cols-2 lg:gap-10 xl:grid-cols-3 paddingLR">
                  <div class="group cursor-pointer bg-white shadow-lg rounded-2xl relative min-[456px]:w-full min-[450px]:w-11/12 min-[385px]:w-10/12 min-[300px]:w-9/12">
-                   <div class=" overflow-hidden rounded-md bg-gray-100 transition-all md:hover:scale-105   dark:bg-gray-800">
+                   <div class=" overflow-hidden rounded-md bg-gray-100 transition-all dark:bg-gray-800">
                       <a class="relative block aspect-square image-font" href="/post/14-architectural-design-ideas-for-spacious-interior">
                         <img alt="Thumbnail" loading="lazy" decoding="async" data-nimg="fill" class="object-cover transition-all" 
-                        sizes="(max-width: 768px) 30vw, 33vw"  src="../assets/7.jpg" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                        sizes="(max-width: 768px) 30vw, 33vw"  src="../assets/7.jpg" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"
+                        @mouseover="zoomInImage" @mouseout="zoomOutImage"
+                        >
                       </a>
                       </div>
                     <div class="p-6">
@@ -55,10 +57,12 @@
                                         </div>
                          </div>
                          <div class="group cursor-pointer bg-white shadow-lg rounded-2xl relative min-[456px]:w-full min-[450px]:w-11/12 min-[385px]:w-10/12 min-[300px]:w-9/12">
-                   <div class=" overflow-hidden rounded-md bg-gray-100 transition-all md:hover:scale-105   dark:bg-gray-800">
+                   <div class=" overflow-hidden rounded-md bg-gray-100 transition-all dark:bg-gray-800">
                       <a class="relative block aspect-square image-font" href="/post/14-architectural-design-ideas-for-spacious-interior">
                         <img alt="Thumbnail" loading="lazy" decoding="async" data-nimg="fill" class="object-cover transition-all" 
-                        sizes="(max-width: 768px) 30vw, 33vw"  src="../assets/8.jpg" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"></a>
+                        sizes="(max-width: 768px) 30vw, 33vw"  src="../assets/8.jpg" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"
+                        @mouseover="zoomInImage" @mouseout="zoomOutImage"
+                        ></a>
                       </div>
                     <div class="p-6 ">
                       <div>
@@ -99,10 +103,12 @@
                                         </div>
                          </div>
                          <div class="group cursor-pointer bg-white shadow-lg rounded-2xl relative min-[456px]:w-full min-[450px]:w-11/12 min-[385px]:w-10/12 min-[300px]:w-9/12">
-                   <div class=" overflow-hidden rounded-md bg-gray-100 transition-all md:hover:scale-105   dark:bg-gray-800">
+                   <div class=" overflow-hidden rounded-md bg-gray-100 transition-all dark:bg-gray-800">
                       <a class="relative block aspect-square image-font" href="/post/14-architectural-design-ideas-for-spacious-interior">
                         <img alt="Thumbnail" loading="lazy" decoding="async" data-nimg="fill" class="object-cover transition-all" 
-                        sizes="(max-width: 768px) 30vw, 33vw"  src="../assets/9.jpg" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"></a>
+                        sizes="(max-width: 768px) 30vw, 33vw"  src="../assets/9.jpg" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"
+                        @mouseover="zoomInImage" @mouseout="zoomOutImage"
+                        ></a>
                       </div>
                     <div class="p-6 ">
                       <div>
@@ -150,6 +156,16 @@
 </template>
 <script>
 export default {
+  methods: {
+    zoomInImage(event) {
+      event.target.style.transform = "scale(1.2)";
+      event.target.style.transition = "transform 0.3s ease";
+    },
+    zoomOutImage(event) {
+      event.target.style.transform = "scale(1)";
+      event.target.style.transition = "transform 0.3s ease";
+    }
+  },
   mounted() {
     const typedTextSpan = document.querySelector(".typed-text");
     const cursorSpan = document.querySelector(".cursor");
@@ -201,5 +217,8 @@ export default {
 };
 </script>
 <style lang="scss">
-    
+    .image-font img {
+  /* CSS cho ảnh */
+  transition: transform 0.3s ease;
+}
 </style>

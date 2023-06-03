@@ -30,7 +30,7 @@
   </div>
 </div>
 <div class="hidden lg:block w-full md:w-1/2 xl:w-1/2 h-screen  p-4">
-  <img src="../assets/forgotpass.svg" alt="" class="w-full h-full object-none boder-radius-40px ">
+  <img src="../assets/forgotpassword.jpg" alt="" class="w-full h-full object-none boder-radius-40px ">
 </div>
 
 </section>

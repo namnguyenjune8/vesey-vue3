@@ -1,6 +1,8 @@
 <template>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end items-center">
+      <div v-if="isLoggedIn">
         <Notification />
+      </div>  
       <div class="relative" @click="toggleDropdown">
         <a v-if="isLoggedIn" class="text-sm font-semibold leading-6 text-gray-900">
           <div class="flex -space-x-2 overflow-hidden">

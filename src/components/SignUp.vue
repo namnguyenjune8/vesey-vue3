@@ -67,7 +67,7 @@
 </div>
 </div>
 <div class="hidden lg:block w-full md:w-1/2 xl:w-1/2 h-screen  p-4">
-<img src="../assets/signup.svg" alt="" class="w-full h-full object-none boder-radius-40px ">
+<img src="../assets/signup_image.jpg" alt="" class="w-full h-full object-none boder-radius-40px ">
 </div>
 
 </section>
@@ -75,7 +75,9 @@
 
 <script>
   import axios from 'axios'
+  
   export default {
+   
     data() {
       return {
         first_name: '',
@@ -92,7 +94,7 @@
     async signup() {
        // Kiểm tra xem password và password_comfirmation có khớp nhau không
     if (this.password !== this.password_confirmation) {
-        this.errorMessage = 'Mật khẩu không trùng khớp!';
+      this.$toast.error = 'Mật khẩu không trùng khớp!';
         return;
     }
       // Gọi API đăng ký và xử lý kết quả
@@ -107,9 +109,9 @@
       });
          // Xử lý kết quả trả về ở đây
       if (response.status === 400 && response.data.message === 'Username already exists') {
-        this.errorMessage = 'Username already used, please choose another name';
+        this.$toast.error = 'Username already used, please choose another name';
       } else if (response.status === 200 && response.data.message === 'Sign Up Success!') {
-        this.successMessage = 'Sign Up Success';
+        this.$toast.success = 'Đăng ký thành công';
         this.errorMessage = ''; // xóa thông báo lỗi nếu có
       } else {
         throw new Error('Registration failed');
@@ -117,7 +119,7 @@
     } catch (error) {
       // Xử lý lỗi ở đây
       console.log(error);
-      this.errorMessage = error.message;
+      this.$toast.error = error.message;
     }
   }
 }

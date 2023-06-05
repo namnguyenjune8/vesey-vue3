@@ -3,12 +3,12 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 pt-20 text-center lg:pt-12 gap-4 flex max-md:pb-8 pb-24 ">
           <div class="w-2/3 max-md:w-full"
                 data-aos="fade-right"
-                data-aos-offset="500"
+                data-aos-offset="0"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="1000"
                 data-aos-anchor="#example-anchor"
           >
-          <h1 class="lg:text-7xl max-md:text-center md:text-5xl max-sm:text-5xl font-viaoda-libre font-normal text-88 leading-126 uppercase tracking-tight text-gray-900 max-md:text-6xl md:ml-12 text-left">
+          <h1 class="lg:text-7xl max-md:text-center md:text-5xl max-sm:text-5xl max-[189px]:text-4xl font-viaoda-libre font-normal text-88 leading-126 uppercase tracking-tight text-gray-900 max-md:text-6xl md:ml-12 text-left">
             <span class="block">TẠO THIỆP MỜI</span>
             <span class="block">ONLINE HIỆN ĐẠI</span>
             <span class="flex items-center max-md:justify-center">TIỆN LỢI 
@@ -34,7 +34,7 @@
           <div class="w-1/3 max-md:hidden	 text-center md:text-right relative mt-12"
             data-aos="fade-left"
             data-aos-anchor="#example-anchor"
-            data-aos-offset="500"
+            data-aos-offset="0"
             data-aos-duration="1000"
             data-aos-easing="ease-in-sine"
           >

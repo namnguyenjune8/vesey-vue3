@@ -8,7 +8,7 @@
           <a class="hover:text-gray-200 ">FAQs</a>
           <a class="hover:text-gray-200 ">Điều khoản và chính sách</a>
         </div>
-        <div class="mb-3 flex space-x-4">
+        <div class="mb-3 flex space-x-4 flex-wrap">
           <a class="text-sm text-gray-500 transition hover:text-gray-600" target="_blank" rel="noopener noreferrer" href="mailto:address@yoursite.com">
             <span class="sr-only">mail</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current text-gray-700 hover:text-blue-500 dark:text-gray-200 dark:hover:text-blue-400 h-6 w-6">

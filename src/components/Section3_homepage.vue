@@ -19,7 +19,7 @@
              data-aos-duration="1000"
           >
           <h3 class="mb-4 text-2xl font-inter not-italic font-normal">Silver</h3>
-          <p class="font-black text-gray-900 text-5xl sm:text-3xl dark:text-gray-400">Miễn phí</p>
+          <p class="font-black text-gray-900 text-5xl sm:text-3xl dark:text-gray-400 font-price">Miễn phí</p>
           <a href="#" class="text-white font-inter my-4 bg-indigo-400 hover:bg-purple-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-md text-sm px-4 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900">Dùng ngay</a>
             <span class="font-inter not-italic font-medium text-xs my-4 tracking-wide uppercase text-gray-900">Bao gồm:</span>
           <ul role="list" class="mb-8 space-y-4 text-left"> 
@@ -62,7 +62,7 @@
              data-aos-duration="2000"
           >
           <h3 class="mb-4 text-2xl font-inter not-italic font-normal">Gold</h3>
-          <p class="font-black text-gray-900 text-5xl sm:text-3xl dark:text-gray-400">500.000 VND</p>
+          <p class="font-black text-gray-900 text-5xl sm:text-3xl dark:text-gray-400 font-price">500.000 VND</p>
           <a href="#" class="text-white font-inter my-4 bg-indigo-400 hover:bg-purple-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-md text-sm px-4 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900">Dùng ngay</a>
             <span class="font-inter not-italic font-medium text-xs my-4 tracking-wide uppercase text-gray-900">Bao gồm:</span>
           <ul role="list" class="mb-8 space-y-4 text-left">
@@ -105,7 +105,7 @@
              data-aos-duration="3000"
           >
           <h3 class="mb-4 text-2xl font-inter not-italic font-normal">Platinum</h3>
-          <p class="font-black text-gray-900 text-5xl sm:text-3xl dark:text-gray-400">2 triệu VND</p>
+          <p class="font-black text-gray-900 text-5xl sm:text-3xl dark:text-gray-400 font-price">2 triệu VND</p>
           <a href="#" class="text-white font-inter my-4 bg-indigo-400 hover:bg-purple-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-md text-sm px-4 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900">Dùng ngay</a>
           <span class="font-inter not-italic font-medium text-xs my-4 tracking-wide uppercase text-gray-900">Bao gồm:</span>
           <ul role="list" class="mb-8 space-y-4 text-left">

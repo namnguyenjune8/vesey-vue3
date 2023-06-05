@@ -5,36 +5,20 @@
     top: 1rem;
     left: 1rem;
 }
-@media screen and (min-width: 1524px) and (max-width: 1554px) {
-.page-image {
- padding-right: 1rem;
- border-radius: 35px;
- border-top-right-radius: 20px;
- border-bottom-right-radius: 20px;
- width: 55rem;
- height: 55rem;
-}
-.font-lagre {
-    font-size: 1.3rem;
-}
-input {
-    &::placeholder {
-      font-size: 1.3rem; 
-    }
-}
-.font-save {
-    font-size: 1.1rem;
-}
-}
-@media screen and (min-width: 1555px) {
+
+@media screen and (min-width: 1000px) {
     .page-image {
      
      border-radius: 35px;
      border-top-right-radius: 20px;
      border-bottom-right-radius: 20px;
-     width: 1000rem;
-     height: 55rem;
+     width: -webkit-fill-available;
+     height: -webkit-fill-available;
      object-fit: unset;
+    }
+    .donecheck-image {
+        width: 4rem;
+        height: 4rem;
     }
     .font-lagre {
         font-size: 1.4rem;
@@ -51,13 +35,11 @@ input {
         width: 2rem;
         height: 2rem;
     }
+   
     }
 @media screen and (min-width: 1845px){
     .logo-image {
         height: 4rem;
-    }
-    .page-image {
-        height: 69rem;
     }
     .font-lagre {
         font-size: 1.7rem;
@@ -70,15 +52,15 @@ input {
     .font-save {
         font-size: 1.5rem;
     }
-    .padding-form {
-        padding-left: 12rem; 
-        padding-right: 12rem;
+    .leading {
+        line-height: 2.5rem;
+    }
+    .donecheck-image {
+        width: 5rem;
+        height: 5rem;
     }
     } 
 @media screen and (min-width: 2100px){
-    .page-image {
-        height: 68rem;
-    }
     .font-lagre {
         font-size: 1.8rem;
     }
@@ -94,12 +76,10 @@ input {
         padding-left: 14rem; 
         padding-right: 14rem;
     }
+    
     } 
 
 @media screen and (min-width: 2200px){
-        .page-image {
-            height: 70rem;
-        }
         .font-lagre {
             font-size: 2rem;
         }
@@ -127,17 +107,12 @@ input {
             width: 2.5rem;
             height: 2.5rem;
         }
+        .leading {
+            line-height: 3rem;
+        }
         } 
-@media screen and (min-width: 2295px){
-    .page-image {
-        height: 90rem;
-    }
-    } 
-@media screen and (width: 1848px),screen and (width: 2138px),screen and (width: 2144px){
-    .page-image {
-        height: 70rem;
-    }
-    }
+
+
 @media screen and (min-width: 2400px){
     .logo-image {
         height: 5rem;
@@ -183,6 +158,10 @@ input {
         font-size: 4.5rem;
         line-height: 1; 
     }
+    .leading {
+        line-height: 3.5rem;
+    }
+    
     } 
 @media screen and (min-width: 2800px){
 
@@ -202,6 +181,7 @@ input {
         height: 3rem;
         margin-bottom: 1.5rem;
     }
+    
     }     
 @media screen and (min-width: 2900px){
     .logo-image {
@@ -226,6 +206,13 @@ input {
     .padding-form {
         padding-left: 24rem; 
         padding-right: 24rem;
+    }
+    .leading {
+        line-height: 4rem;
+    }
+    .donecheck-image {
+        width: 6rem;
+        height: 6rem;
     }
     }
 @media screen and (min-width: 3200px){
@@ -260,9 +247,6 @@ input {
     .logo-image {
         height: 7rem;
     }
-    .page-image {
-        height: 140rem;
-    }
     .font-lagre {
         font-size: 3rem;
     }
@@ -274,15 +258,18 @@ input {
     .font-save {
         font-size: 2.6rem;
     }
+    .padding-form {
+        padding-top: 12rem;
+    }
+    .leading {
+        line-height: 5rem;
+    }
     }
 @media screen and (min-width: 3800px){
 
     .font-lagre {
         font-size: 3.2rem;
     }
-    // .page-image {
-    //     height: 140rem;
-    // }
     input {
         &::placeholder {
             font-size: 2.8rem; 
@@ -309,9 +296,6 @@ input {
     .logo-image {
         height: 8rem;
     }
-    .page-image {
-        height: 140rem;
-    }
     .font-lagre {
         font-size: 3.4rem;
     }
@@ -327,11 +311,12 @@ input {
         width: 4rem;
         height: 4rem;
     }
+    .donecheck-image {
+        width: 10rem;
+        height: 10rem;
+    }
     } 
 @media screen and (min-width: 4200px){
-    .page-image {
-        height: 150rem;
-    }
     .font-lagre {
         font-size: 3.6rem;
     }
@@ -361,18 +346,17 @@ input {
     .font-save {
         font-size: 3.5rem;
     }
-    }   
-    @media screen and (min-width: 4700px) {
-        .page-image {
-            height: 175rem;
-        }
+    .font-google {
+        width: 5rem;
+        height: 5rem;
+        margin-top: 15px;
+
     }
+    
+    }   
 @media screen and (min-width: 5000px){
     .logo-image {
         height: 11rem;
-    }
-    .page-image {
-        height: 190rem;
     }
     .font-lagre {
         font-size: 4.5rem;
@@ -390,13 +374,13 @@ input {
         line-height: 1;
         margin-bottom: 2.5rem;
     }
+    .padding-form {
+        padding-top: 20rem;
+    }
     }  
 @media screen and (min-width: 5500px){
     .logo-image {
         height: 11rem;
-    }
-    .page-image {
-        height: 190rem;
     }
     .font-lagre {
         font-size: 3.8rem;
@@ -414,18 +398,21 @@ input {
     .logo-image {
         height: 12rem;
     }
-    .page-image {
-        height: 121rem;
-    }
     .font-lagre {
-        font-size: 3.8rem;
+        font-size: 5rem;
     }
     input {
         &::placeholder {
-            font-size: 3.5rem; 
+            font-size: 4rem; 
         }
     }
     .font-save {
-        font-size: 3.5rem;
+        font-size: 4rem;
+    }
+    .font-hello {
+        font-size: 8rem;
+        line-height: 1;
+        margin-bottom: 2.5rem;
     }
     }                 
+    

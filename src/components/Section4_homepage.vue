@@ -2,14 +2,14 @@
     <section class="bg-white pb-12">
       <div class="container  min-[500px]:px-8 mx-auto xl:px-5 bg-white  py-6 lg:py-14">
         <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
-          <h2 class="mb-4 text-3xl font-inter font-extrabold not-italic tracking-tight text-gray-900 dark:text-white">
+          <h2 class="mb-4 text-3xl max-[250px]:text-lg  font-inter font-extrabold not-italic tracking-tight text-gray-900 dark:text-white">
             
             <span class="typed-text decoration-1"></span>
               <span class="cursor">&nbsp;</span>
           </h2>
         </div>
                 <div class="mt-10 grid gap-10 md:grid-cols-2 lg:gap-10 xl:grid-cols-3 paddingLR">
-                 <div class="group cursor-pointer bg-white shadow-lg rounded-2xl relative min-[456px]:w-full min-[450px]:w-11/12 min-[385px]:w-10/12 min-[300px]:w-9/12">
+                 <div class="group cursor-pointer bg-white shadow-lg rounded-2xl relative min-[456px]:w-full min-[450px]:w-11/12 min-[385px]:w-10/12 min-[300px]:w-9/12 min-[289px]:w-8/12 min-[260px]:w-3/5 min-[252px]:w-7/12 min-[215px]:w-6/12 min-[0px]:w-5/12">
                    <div class=" overflow-hidden rounded-md bg-gray-100 transition-all dark:bg-gray-800">
                       <a class="relative block aspect-square image-font" href="/post/14-architectural-design-ideas-for-spacious-interior">
                         <img alt="Thumbnail" loading="lazy" decoding="async" data-nimg="fill" class="object-cover transition-all" 
@@ -56,7 +56,7 @@
                                         </div>
                                         </div>
                          </div>
-                         <div class="group cursor-pointer bg-white shadow-lg rounded-2xl relative min-[456px]:w-full min-[450px]:w-11/12 min-[385px]:w-10/12 min-[300px]:w-9/12">
+                         <div class="group cursor-pointer bg-white shadow-lg rounded-2xl relative min-[456px]:w-full min-[450px]:w-11/12 min-[385px]:w-10/12 min-[300px]:w-9/12 min-[289px]:w-8/12 min-[260px]:w-3/5 min-[252px]:w-7/12 min-[215px]:w-6/12 min-[0px]:w-5/12">
                    <div class=" overflow-hidden rounded-md bg-gray-100 transition-all dark:bg-gray-800">
                       <a class="relative block aspect-square image-font" href="/post/14-architectural-design-ideas-for-spacious-interior">
                         <img alt="Thumbnail" loading="lazy" decoding="async" data-nimg="fill" class="object-cover transition-all" 
@@ -102,7 +102,7 @@
                                         </div>
                                         </div>
                          </div>
-                         <div class="group cursor-pointer bg-white shadow-lg rounded-2xl relative min-[456px]:w-full min-[450px]:w-11/12 min-[385px]:w-10/12 min-[300px]:w-9/12">
+                         <div class="group cursor-pointer bg-white shadow-lg rounded-2xl relative min-[456px]:w-full min-[450px]:w-11/12 min-[385px]:w-10/12 min-[300px]:w-9/12 min-[289px]:w-8/12 min-[260px]:w-3/5 min-[252px]:w-7/12 min-[215px]:w-6/12 min-[0px]:w-5/12">
                    <div class=" overflow-hidden rounded-md bg-gray-100 transition-all dark:bg-gray-800">
                       <a class="relative block aspect-square image-font" href="/post/14-architectural-design-ideas-for-spacious-interior">
                         <img alt="Thumbnail" loading="lazy" decoding="async" data-nimg="fill" class="object-cover transition-all" 

@@ -16,7 +16,7 @@
         </div>
         <div class="flex justify-center flex-col mt-12">
           <div class="my-7 flex justify-center">
-    <div class="flex flex-row space-x-2 bg-gray-200 rounded-md p-1"
+    <div class="flex flex-row space-x-2 bg-gray-200 rounded-md p-1 max-[520px]:flex-wrap"
              data-aos="fade-up"
              data-aos-duration="2000"
     >

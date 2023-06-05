@@ -11,27 +11,42 @@ const routes = [
   {
     path: '/' ,
     name: 'HomePage',
-    component: Homepage
+    component: Homepage,
+    meta: {
+      title: 'Trang chủ Vesey'
+    }
   },
   {
     path: '/login' ,
     name: 'Login',
-    component: Login
+    component: Login,
+    meta: {
+      title: 'Đăng nhập'
+    }
   },
   {
     path: '/signup' ,
     name: 'SignUp',
-    component: SignUp
+    component: SignUp,
+    meta: {
+      title: 'Đăng ký'
+    }
   },
   {
     path: '/resetpassword' ,
     name: 'ForgotPassword',
-    component: ForgorPassword
+    component: ForgorPassword,
+    meta: {
+      title: 'Tìm mật khẩu'
+    }
   },
   {
     path: '/sendlinktoemail' ,
     name: 'LinkToEmail',
-    component: LinkToEmail
+    component: LinkToEmail,
+    meta: {
+      title: 'Cập nhật mật khẩu'
+    }
   },
   
   // {

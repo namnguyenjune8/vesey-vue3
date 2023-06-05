@@ -37,6 +37,13 @@
     }
    
     }
+    @media screen and (min-width: 1500px){ 
+        .padding-form {
+            padding-left: 12rem; 
+            padding-right: 12rem;
+        }
+    }
+
 @media screen and (min-width: 1845px){
     .logo-image {
         height: 4rem;
@@ -59,6 +66,11 @@
         width: 5rem;
         height: 5rem;
     }
+    .padding-form {
+        padding-left: 14rem; 
+        padding-right: 14rem;
+    }
+    
     } 
 @media screen and (min-width: 2100px){
     .font-lagre {
@@ -72,10 +84,7 @@
     .font-text-account {
         font-size: 24px;
     }
-    .padding-form {
-        padding-left: 14rem; 
-        padding-right: 14rem;
-    }
+    
     
     } 
 
@@ -148,6 +157,7 @@
     .padding-form {
         padding-left: 18rem; 
         padding-right: 18rem;
+        padding-top: 14rem;
     }
     
     .font-email {
@@ -259,7 +269,7 @@
         font-size: 2.6rem;
     }
     .padding-form {
-        padding-top: 12rem;
+        padding-top: 20rem;
     }
     .leading {
         line-height: 5rem;
@@ -315,6 +325,10 @@
         width: 10rem;
         height: 10rem;
     }
+    .input-email {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
     } 
 @media screen and (min-width: 4200px){
     .font-lagre {
@@ -352,6 +366,14 @@
         margin-top: 15px;
 
     }
+    .padding-form {
+        padding-left: 36rem; 
+        padding-right: 36rem;
+        padding-top: 20rem;
+    }
+    .line-height {
+        line-height: 4rem;
+    }
     
     }   
 @media screen and (min-width: 5000px){
@@ -375,7 +397,7 @@
         margin-bottom: 2.5rem;
     }
     .padding-form {
-        padding-top: 20rem;
+        padding-top: 32rem;
     }
     }  
 @media screen and (min-width: 5500px){

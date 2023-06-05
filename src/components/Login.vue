@@ -14,7 +14,7 @@
 
 
     <h1 class="text-3xl md:text-5xl font-normal font-inter leading-tight mt-12 mb-2 2xl:mb-4 font-hello">Xin chào!</h1>
-    <span class="font-inter font-normal text-base text-gray-400 font-lagre ">Vui lòng đăng nhập vào tài khoản của bạn.</span>
+    <span class="font-inter font-normal text-base text-gray-400 font-lagre line-height ">Vui lòng đăng nhập vào tài khoản của bạn.</span>
 
     <form @submit.prevent="login" class="mt-6" action="#" method="POST">
       <div>

@@ -13,33 +13,33 @@
 <div class="w-full h-100 mt-24">
 
 
-  <h1 class="text-3xl md:text-5xl font-normal font-inter leading-tight mt-32  font-hello">Đăng ký!</h1>
+  <h1 class="text-3xl md:text-5xl font-normal font-inter leading-tight mt-32 font-hello">Đăng ký!</h1>
 
   <form @submit.prevent="signup" class="mt-6" action="#" method="POST">
     <div>
-        <label class="block text-gray-700 font-lagre">Họ và tên</label>
-        <input type="text" name="" id="" placeholder="Nhập họ" class="w-full px-4 py-2 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none 2xl:py-4 2xl:text-2xl input-email font-email min-[3000px]:mb-4 " v-model="first_name" autofocus autocomplete required>
-        <input type="text" name="" id="" placeholder="Nhập tên đệm & tên" class="w-full px-4 py-2 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none 2xl:py-4 2xl:text-2xl input-email font-email " v-model="last_name" autofocus autocomplete required>
+        <label class="block text-gray-700 font-text-account">Họ và tên</label>
+        <input type="text" name="" id="" placeholder="Nhập họ" class="w-full px-3 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none 2xl:py-4 2xl:text-2xl input-email font-email min-[3000px]:mb-4 " v-model="first_name" autofocus autocomplete required>
+        <input type="text" name="" id="" placeholder="Nhập tên đệm & tên" class="w-full px-3 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none 2xl:py-4 2xl:text-2xl input-email font-email " v-model="last_name" autofocus autocomplete required>
 
       </div>
       <div class="mt-4">
-      <label class="block text-gray-700 font-lagre">Số điện thoại</label>
-      <input type="number" name="" id="" placeholder="Nhập số điện thoại của bạn" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none 2xl:py-4 2xl:text-2xl input-email font-email " v-model="phone_number" autofocus autocomplete required>
+      <label class="block text-gray-700 font-text-account">Số điện thoại</label>
+      <input type="number" name="" id="" placeholder="Nhập số điện thoại của bạn" class="w-full px-3 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none 2xl:py-4 2xl:text-2xl input-email font-email " v-model="phone_number" autofocus autocomplete required>
     </div>
     <div class="mt-4">
-      <label class="block text-gray-700 font-lagre">Địa chỉ</label>
-      <input type="text" name="" id="" placeholder="Nhập địa chỉ của bạn" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none 2xl:py-4 2xl:text-2xl input-email font-email " v-model="address" autofocus autocomplete required>
+      <label class="block text-gray-700 font-text-account">Địa chỉ</label>
+      <input type="text" name="" id="" placeholder="Nhập địa chỉ của bạn" class="w-full px-3 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none 2xl:py-4 2xl:text-2xl input-email font-email " v-model="address" autofocus autocomplete required>
     </div>
     <div class="mt-4">
-      <label class="block text-gray-700 font-lagre">Email</label>
-      <input type="email" name="" id="" placeholder="Nhập Email của bạn" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none 2xl:py-4 2xl:text-2xl input-email font-email " v-model="email" autofocus autocomplete required>
+      <label class="block text-gray-700 font-text-account">Email</label>
+      <input type="email" name="" id="" placeholder="Nhập Email của bạn" class="w-full px-3 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none 2xl:py-4 2xl:text-2xl input-email font-email " v-model="email" autofocus autocomplete required>
     </div>
 
     <div class="mt-4">
-      <label class="block text-gray-700 font-lagre">Mật khẩu</label>
-      <input type="password" name="" id="" placeholder="Nhập mật khẩu của bạn" minlength="6" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500
+      <label class="block text-gray-700 font-text-account">Mật khẩu</label>
+      <input type="password" name="" id="" placeholder="Nhập mật khẩu của bạn" minlength="6" class="w-full px-3 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500
             focus:bg-white focus:outline-none 2xl:py-4 2xl:text-2xl input-email font-email min-[3000px]:mb-4" v-model="password" required>
-      <input type="password" name="" id="" placeholder="Nhập lại mật khẩu của bạn" minlength="6" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500
+      <input type="password" name="" id="" placeholder="Nhập lại mật khẩu của bạn" minlength="6" class="w-full px-3 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500
             focus:bg-white focus:outline-none 2xl:py-4 2xl:text-2xl input-email font-email " v-model="password_confirmation" required>
     </div>
 
@@ -55,7 +55,7 @@
     <hr class="my-6 border-gray-300 w-2/5">
     </div>
 
-  <button type="button" class="w-full block bg-white hover:bg-gray-100 focus:bg-gray-100 text-gray-900 font-semibold 
+  <button type="button" class="w-full block bg-white hover:bg-gray-100 focus:bg-gray-100 text-gray-900 font-normal 
   rounded-lg px-4 py-3 border border-gray-300 min-[3200px]:border-2 min-[4300px]:py-6 min-[4300px]:rounded-2xl">
         <div class="flex items-center justify-center">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="w-6 h-6 font-google"

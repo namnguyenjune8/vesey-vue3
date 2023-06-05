@@ -18,7 +18,7 @@
 
     <form @submit.prevent="resetPassword" class="mt-6" action="#" method="POST">
       <div>
-        <label class="block text-gray-700 font-lagre">Email</label>
+        <label class="block text-gray-700 font-text-account">Email</label>
         <input type="email" name="" id="" placeholder="Nhập Email của bạn" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white 
         focus:outline-none 2xl:py-4 2xl:text-2xl input-email font-email " v-model="email" autofocus autocomplete required>
       </div>

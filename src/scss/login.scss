@@ -2,8 +2,8 @@
     border-radius: 40px;
 }
 .logo-image {
-    top: 1rem;
-    left: 1rem;
+    top: 2rem;
+    left: 2rem;
 }
 
 @media screen and (min-width: 1000px) {
@@ -21,15 +21,15 @@
         height: 4rem;
     }
     .font-lagre {
-        font-size: 1.4rem;
+        font-size: 16px;
     }
     input {
         &::placeholder {
-          font-size: 1.3rem; 
+          font-size: 16px; 
         }
     }
-    .font-save {
-        font-size: 1.2rem;
+    .font-text-account {
+        font-size: 14px;
     }
     .font-google {
         width: 2rem;
@@ -46,11 +46,11 @@
     }
     input {
         &::placeholder {
-          font-size: 1.4rem; 
+          font-size: 1.2rem; 
         }
     }
-    .font-save {
-        font-size: 1.5rem;
+    .font-text-account {
+        font-size: 20px;
     }
     .leading {
         line-height: 2.5rem;
@@ -66,11 +66,11 @@
     }
     input {
         &::placeholder {
-          font-size: 1.5rem; 
+          font-size: 1.3rem; 
         }
     }
-    .font-save {
-        font-size: 1.6rem;
+    .font-text-account {
+        font-size: 24px;
     }
     .padding-form {
         padding-left: 14rem; 
@@ -85,11 +85,11 @@
         }
         input {
             &::placeholder {
-              font-size: 1.7rem; 
+              font-size: 1.4rem; 
             }
         }
-        .font-save {
-            font-size: 1.8rem;
+        .font-text-account {
+            font-size: 28px;
         }
         .padding-form {
             padding-left: 16rem; 
@@ -125,7 +125,7 @@
             font-size: 1.8rem; 
         }
     }
-    .font-save {
+    .font-text-account {
         font-size: 1.8rem;
     }
     .font-hello {
@@ -195,7 +195,7 @@
             font-size: 2.2rem; 
         }
     }
-    .font-save {
+    .font-text-account {
         font-size: 2.2rem;
     }
     .input-email {
@@ -225,7 +225,7 @@
             font-size: 2.4rem; 
         }
     }
-    .font-save {
+    .font-text-account {
         font-size: 2.4rem;
     }
     
@@ -255,7 +255,7 @@
             font-size: 2.6rem; 
         }
     }
-    .font-save {
+    .font-text-account {
         font-size: 2.6rem;
     }
     .padding-form {
@@ -275,7 +275,7 @@
             font-size: 2.8rem; 
         }
     }
-    .font-save {
+    .font-text-account {
         font-size: 2.8rem;
     }
     .font-email {
@@ -304,7 +304,7 @@
             font-size: 3rem; 
         }
     }
-    .font-save {
+    .font-text-account {
         font-size: 3rem;
     }
     .font-google {
@@ -325,7 +325,7 @@
             font-size: 3.2rem; 
         }
     }
-    .font-save {
+    .font-text-account {
         font-size: 3.2rem;
     }
     }  
@@ -343,7 +343,7 @@
             font-size: 3.5rem; 
         }
     }
-    .font-save {
+    .font-text-account {
         font-size: 3.5rem;
     }
     .font-google {
@@ -366,7 +366,7 @@
             font-size: 4rem; 
         }
     }
-    .font-save {
+    .font-text-account {
         font-size: 4rem;
     }
     .font-hello {
@@ -390,7 +390,7 @@
             font-size: 3.5rem; 
         }
     }
-    .font-save {
+    .font-text-account {
         font-size: 3.5rem;
     }
     }
@@ -406,7 +406,7 @@
             font-size: 4rem; 
         }
     }
-    .font-save {
+    .font-text-account {
         font-size: 4rem;
     }
     .font-hello {

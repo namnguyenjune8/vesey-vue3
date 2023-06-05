@@ -13,21 +13,21 @@
   <div class="w-full h-100"> 
 
 
-    <h1 class="text-3xl md:text-5xl font-normal font-inter leading-tight mt-12 2xl:mb-4 font-hello">Xin chào!</h1>
+    <h1 class="text-3xl md:text-5xl font-normal font-inter leading-tight mt-12 mb-2 2xl:mb-4 font-hello">Xin chào!</h1>
     <span class="font-inter font-normal text-base text-gray-400 font-lagre ">Vui lòng đăng nhập vào tài khoản của bạn.</span>
 
     <form @submit.prevent="login" class="mt-6" action="#" method="POST">
       <div>
-        <label class="block text-gray-700 font-lagre">Email</label>
-        <input type="email" name="email" id="" placeholder="Nhập Email của bạn" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border 
-        focus:border-blue-500 focus:bg-white focus:outline-none 2xl:py-4 2xl:text-2xl input-email font-email 
+        <label class="block text-gray-700 font-text-account">Email</label>
+        <input type="email" name="email" id="" placeholder="Nhập Email của bạn" class="w-full px-3 py-3 rounded-lg bg-gray-200 mt-2 border 
+        focus:border-blue-500 focus:bg-white focus:outline-none 2xl:py-4 2xl:text-xl input-email font-email 
         " v-model="email" autofocus autocomplete required>
       </div>
 
       <div class="mt-4">
-        <label class="block text-gray-700 font-lagre">Mật khẩu</label>
-        <input type="password" name="" id="" placeholder="Nhập mật khẩu của bạn" minlength="6" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500
-              focus:bg-white focus:outline-none 2xl:py-4 2xl:text-2xl input-email font-email" v-model="password" required>
+        <label class="block text-gray-700 font-text-account">Mật khẩu</label>
+        <input type="password" name="" id="" placeholder="Nhập mật khẩu của bạn" minlength="6" class="w-full px-3 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500
+              focus:bg-white focus:outline-none 2xl:py-4 2xl:text-xl input-email font-email" v-model="password" required>
       </div>
 
       <div class="text-right mt-2 flex flex-row justify-between items-center 2xl:mt-4 min-[2400px]:my-8 min-[3200px]:my-12 ">
@@ -35,9 +35,9 @@
         <div class=" flex items-center gap-x-1">
                 <input type="checkbox" name="remember" id="" class=" w-4 h-4 min-[2100px]:w-6 min-[2100px]:h-6 min-[3200px]:w-8 min-[3200px]:h-8
                 min-[5000px]:w-10 min-[5000px]:h-10 ">
-                <label for="" class="text-base text-center  not-italic text-gray-900 font-save min-[2500px]:ml-2">Lưu đăng nhập</label>
+                <label for="" class="text-base text-center  not-italic text-gray-900 font-lagre min-[2500px]:ml-2">Lưu đăng nhập</label>
             </div>
-        <a href="/resetpassword" class="text-sm font-semibold text-gray-700 hover:text-blue-700 focus:text-blue-700 font-save">Quên mật khẩu?</a>
+        <a href="/resetpassword" class="text-sm font-semibold text-gray-700 hover:text-blue-700 focus:text-blue-700 font-lagre">Quên mật khẩu?</a>
       </div>
 
       <button type="submit" class="w-full block bg-indigo-500 hover:bg-indigo-400 focus:bg-indigo-400 text-white font-semibold rounded-lg
@@ -48,7 +48,7 @@
 
     <hr class="my-6 border-gray-300 w-full">
 
-    <button type="button" class="w-full block bg-white hover:bg-gray-100 focus:bg-gray-100 text-gray-900 font-semibold rounded-lg px-4 py-3 border border-gray-300
+    <button type="button" class="w-full block bg-white hover:bg-gray-100 focus:bg-gray-100 text-gray-900 font-normal rounded-lg px-4 py-3 border border-gray-300
     min-[3200px]:border-2 min-[4300px]:py-6 min-[4300px]:rounded-2xl">
           <div class="flex items-center justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="w-6 h-6 font-google"

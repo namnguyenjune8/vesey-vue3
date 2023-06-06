@@ -1,3 +1,7 @@
+* {
+    -webkit-user-drag: none;
+    box-sizing: border-box;
+}
 .boder-radius-40px {
     border-radius: 40px;
 }
@@ -5,16 +9,44 @@
     top: 2rem;
     left: 2rem;
 }
+.vesey-auth-bg {
+    max-height: calc(100vh - 50px);
+}
+.container {
+    width: 100%;
+}
+@media screen and (min-width: 640px) {
+.container {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 640px;
+}
+}
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
 
-@media screen and (min-width: 1000px) {
     .page-image {
      
      border-radius: 35px;
      border-top-right-radius: 20px;
      border-bottom-right-radius: 20px;
-     width: -webkit-fill-available;
-     height: -webkit-fill-available;
-     object-fit: unset;
+     width: auto;
+     height: auto;
+     object-fit: cover;
+     max-height: calc(100vh - 50px);
     }
     .donecheck-image {
         width: 4rem;
@@ -31,410 +63,407 @@
     .font-text-account {
         font-size: 14px;
     }
-    .font-google {
-        width: 2rem;
-        height: 2rem;
-    }
+
    
-    }
-    @media screen and (min-width: 1500px){ 
-        .padding-form {
-            padding-left: 12rem; 
-            padding-right: 12rem;
-        }
-    }
+  
+//     @media screen and (min-width: 1500px){ 
+//         .padding-form {
+//             padding-left: 12rem; 
+//             padding-right: 12rem;
+//         }
+//     }
 
-@media screen and (min-width: 1845px){
-    .logo-image {
-        height: 4rem;
-    }
-    .font-lagre {
-        font-size: 1.7rem;
-    }
-    input {
-        &::placeholder {
-          font-size: 1.2rem; 
-        }
-    }
-    .font-text-account {
-        font-size: 20px;
-    }
-    .leading {
-        line-height: 2.5rem;
-    }
-    .donecheck-image {
-        width: 5rem;
-        height: 5rem;
-    }
-    .padding-form {
-        padding-left: 14rem; 
-        padding-right: 14rem;
-    }
+// @media screen and (min-width: 1845px){
+//     .logo-image {
+//         height: 4rem;
+//     }
+//     .font-lagre {
+//         font-size: 1.7rem;
+//     }
+//     input {
+//         &::placeholder {
+//           font-size: 1.2rem; 
+//         }
+//     }
+//     .font-text-account {
+//         font-size: 20px;
+//     }
+//     .leading {
+//         line-height: 2.5rem;
+//     }
+//     .donecheck-image {
+//         width: 5rem;
+//         height: 5rem;
+//     }
+//     .padding-form {
+//         padding-left: 14rem; 
+//         padding-right: 14rem;
+//     }
     
-    } 
-@media screen and (min-width: 2100px){
-    .font-lagre {
-        font-size: 1.8rem;
-    }
-    input {
-        &::placeholder {
-          font-size: 1.3rem; 
-        }
-    }
-    .font-text-account {
-        font-size: 24px;
-    }
+//     } 
+// @media screen and (min-width: 2100px){
+//     .font-lagre {
+//         font-size: 1.8rem;
+//     }
+//     input {
+//         &::placeholder {
+//           font-size: 1.3rem; 
+//         }
+//     }
+//     .font-text-account {
+//         font-size: 24px;
+//     }
     
     
-    } 
+//     } 
 
-@media screen and (min-width: 2200px){
-        .font-lagre {
-            font-size: 2rem;
-        }
-        input {
-            &::placeholder {
-              font-size: 1.4rem; 
-            }
-        }
-        .font-text-account {
-            font-size: 28px;
-        }
-        .padding-form {
-            padding-left: 16rem; 
-            padding-right: 16rem;
-        }
-        .input-email {
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
-        }
-        .font-email {
-            font-size: 1.875rem;
-            line-height: 2.25rem;
-        }
-        .font-google {
-            width: 2.5rem;
-            height: 2.5rem;
-        }
-        .leading {
-            line-height: 3rem;
-        }
-        } 
+// @media screen and (min-width: 2200px){
+//         .font-lagre {
+//             font-size: 2rem;
+//         }
+//         input {
+//             &::placeholder {
+//               font-size: 1.4rem; 
+//             }
+//         }
+//         .font-text-account {
+//             font-size: 28px;
+//         }
+//         .padding-form {
+//             padding-left: 16rem; 
+//             padding-right: 16rem;
+//         }
+//         .input-email {
+//             padding-top: 1.5rem;
+//             padding-bottom: 1.5rem;
+//         }
+//         .font-email {
+//             font-size: 1.875rem;
+//             line-height: 2.25rem;
+//         }
+//         .font-google {
+//             width: 2.5rem;
+//             height: 2.5rem;
+//         }
+//         .leading {
+//             line-height: 3rem;
+//         }
+//         } 
 
 
-@media screen and (min-width: 2400px){
-    .logo-image {
-        height: 5rem;
-    }
-    .font-lagre {
-        font-size: 2rem;
-    }
-    input {
-        &::placeholder {
-            font-size: 1.8rem; 
-        }
-    }
-    .font-text-account {
-        font-size: 1.8rem;
-    }
-    .font-hello {
-        font-size: 3.75rem;
-        line-height: 1;
-    }
-    } 
-@media screen and (min-width: 2600px){
-    .font-lagre {
-        font-size: 2.2rem;
-    }
-    input {
-        &::placeholder {
-            font-size: 2rem; 
-        }
-    }
-    .font-save {
-        font-size: 2rem;
-    }
-    .padding-form {
-        padding-left: 18rem; 
-        padding-right: 18rem;
-        padding-top: 14rem;
-    }
+// @media screen and (min-width: 2400px){
+//     .logo-image {
+//         height: 5rem;
+//     }
+//     .font-lagre {
+//         font-size: 2rem;
+//     }
+//     input {
+//         &::placeholder {
+//             font-size: 1.8rem; 
+//         }
+//     }
+//     .font-text-account {
+//         font-size: 1.8rem;
+//     }
+//     .font-hello {
+//         font-size: 3.75rem;
+//         line-height: 1;
+//     }
+//     } 
+// @media screen and (min-width: 2600px){
+//     .font-lagre {
+//         font-size: 2.2rem;
+//     }
+//     input {
+//         &::placeholder {
+//             font-size: 2rem; 
+//         }
+//     }
+//     .font-save {
+//         font-size: 2rem;
+//     }
+//     .padding-form {
+//         padding-left: 18rem; 
+//         padding-right: 18rem;
+//         padding-top: 14rem;
+//     }
     
-    .font-email {
-        font-size: 2.25rem; 
-        line-height: 2.5rem;
-    }
-    .font-hello {
-        font-size: 4.5rem;
-        line-height: 1; 
-    }
-    .leading {
-        line-height: 3.5rem;
-    }
+//     .font-email {
+//         font-size: 2.25rem; 
+//         line-height: 2.5rem;
+//     }
+//     .font-hello {
+//         font-size: 4.5rem;
+//         line-height: 1; 
+//     }
+//     .leading {
+//         line-height: 3.5rem;
+//     }
     
-    } 
-@media screen and (min-width: 2800px){
+//     } 
+// @media screen and (min-width: 2800px){
 
-    .font-lagre {
-        font-size: 2.3rem;
-    }
-    input {
-        &::placeholder {
-            font-size: 2rem; 
-        }
-    }
-    .font-save {
-        font-size: 2.1rem;
-    }
-    .font-google {
-        width: 3rem;
-        height: 3rem;
-        margin-bottom: 1.5rem;
-    }
+//     .font-lagre {
+//         font-size: 2.3rem;
+//     }
+//     input {
+//         &::placeholder {
+//             font-size: 2rem; 
+//         }
+//     }
+//     .font-save {
+//         font-size: 2.1rem;
+//     }
+//     .font-google {
+//         width: 3rem;
+//         height: 3rem;
+//         margin-bottom: 1.5rem;
+//     }
     
-    }     
-@media screen and (min-width: 2900px){
-    .logo-image {
-        height: 6rem;
-    }
-    .font-lagre {
-        font-size: 2.4rem;
-    }
-    input {
-        &::placeholder {
-            font-size: 2.2rem; 
-        }
-    }
-    .font-text-account {
-        font-size: 2.2rem;
-    }
-    .input-email {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        border-radius: 1rem;
-    }
-    .padding-form {
-        padding-left: 24rem; 
-        padding-right: 24rem;
-    }
-    .leading {
-        line-height: 4rem;
-    }
-    .donecheck-image {
-        width: 6rem;
-        height: 6rem;
-    }
-    }
-@media screen and (min-width: 3200px){
+//     }     
+// @media screen and (min-width: 2900px){
+//     .logo-image {
+//         height: 6rem;
+//     }
+//     .font-lagre {
+//         font-size: 2.4rem;
+//     }
+//     input {
+//         &::placeholder {
+//             font-size: 2.2rem; 
+//         }
+//     }
+//     .font-text-account {
+//         font-size: 2.2rem;
+//     }
+//     .input-email {
+//         padding-top: 2rem;
+//         padding-bottom: 2rem;
+//         border-radius: 1rem;
+//     }
+//     .padding-form {
+//         padding-left: 24rem; 
+//         padding-right: 24rem;
+//     }
+//     .leading {
+//         line-height: 4rem;
+//     }
+//     .donecheck-image {
+//         width: 6rem;
+//         height: 6rem;
+//     }
+//     }
+// @media screen and (min-width: 3200px){
 
-    .font-lagre {
-        font-size: 2.6rem;
-    }
-    input {
-        &::placeholder {
-            font-size: 2.4rem; 
-        }
-    }
-    .font-text-account {
-        font-size: 2.4rem;
-    }
+//     .font-lagre {
+//         font-size: 2.6rem;
+//     }
+//     input {
+//         &::placeholder {
+//             font-size: 2.4rem; 
+//         }
+//     }
+//     .font-text-account {
+//         font-size: 2.4rem;
+//     }
     
-    .font-email {
-        font-size: 3rem;
-        line-height: 1;
-    }
-    .font-google {
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-    .font-hello {
-        font-size: 5rem;
-        line-height: 1;
-        margin-bottom: 1.8rem;
-    }
-    }
-@media screen and (min-width: 3500px){
-    .logo-image {
-        height: 7rem;
-    }
-    .font-lagre {
-        font-size: 3rem;
-    }
-    input {
-        &::placeholder {
-            font-size: 2.6rem; 
-        }
-    }
-    .font-text-account {
-        font-size: 2.6rem;
-    }
-    .padding-form {
-        padding-top: 20rem;
-    }
-    .leading {
-        line-height: 5rem;
-    }
-    }
-@media screen and (min-width: 3800px){
+//     .font-email {
+//         font-size: 3rem;
+//         line-height: 1;
+//     }
+//     .font-google {
+//         width: 3.5rem;
+//         height: 3.5rem;
+//     }
+//     .font-hello {
+//         font-size: 5rem;
+//         line-height: 1;
+//         margin-bottom: 1.8rem;
+//     }
+//     }
+// @media screen and (min-width: 3500px){
+//     .logo-image {
+//         height: 7rem;
+//     }
+//     .font-lagre {
+//         font-size: 3rem;
+//     }
+//     input {
+//         &::placeholder {
+//             font-size: 2.6rem; 
+//         }
+//     }
+//     .font-text-account {
+//         font-size: 2.6rem;
+//     }
+//     .padding-form {
+//         padding-top: 20rem;
+//     }
+//     .leading {
+//         line-height: 5rem;
+//     }
+//     }
+// @media screen and (min-width: 3800px){
 
-    .font-lagre {
-        font-size: 3.2rem;
-    }
-    input {
-        &::placeholder {
-            font-size: 2.8rem; 
-        }
-    }
-    .font-text-account {
-        font-size: 2.8rem;
-    }
-    .font-email {
-        font-size: 3.75rem;
-        line-height: 1;
-    }
-    .font-google {
-        width: 3.7rem;
-        height: 3.7rem;
-    }
-    .font-hello {
-        font-size: 6rem;
-        line-height: 1;
-        margin-bottom: 2rem;
-    }
-    }
-@media screen and (min-width: 4000px){
-    .logo-image {
-        height: 8rem;
-    }
-    .font-lagre {
-        font-size: 3.4rem;
-    }
-    input {
-        &::placeholder {
-            font-size: 3rem; 
-        }
-    }
-    .font-text-account {
-        font-size: 3rem;
-    }
-    .font-google {
-        width: 4rem;
-        height: 4rem;
-    }
-    .donecheck-image {
-        width: 10rem;
-        height: 10rem;
-    }
-    .input-email {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    } 
-@media screen and (min-width: 4200px){
-    .font-lagre {
-        font-size: 3.6rem;
-    }
-    input {
-        &::placeholder {
-            font-size: 3.2rem; 
-        }
-    }
-    .font-text-account {
-        font-size: 3.2rem;
-    }
-    }  
+//     .font-lagre {
+//         font-size: 3.2rem;
+//     }
+//     input {
+//         &::placeholder {
+//             font-size: 2.8rem; 
+//         }
+//     }
+//     .font-text-account {
+//         font-size: 2.8rem;
+//     }
+//     .font-email {
+//         font-size: 3.75rem;
+//         line-height: 1;
+//     }
+//     .font-google {
+//         width: 3.7rem;
+//         height: 3.7rem;
+//     }
+//     .font-hello {
+//         font-size: 6rem;
+//         line-height: 1;
+//         margin-bottom: 2rem;
+//     }
+//     }
+// @media screen and (min-width: 4000px){
+//     .logo-image {
+//         height: 8rem;
+//     }
+//     .font-lagre {
+//         font-size: 3.4rem;
+//     }
+//     input {
+//         &::placeholder {
+//             font-size: 3rem; 
+//         }
+//     }
+//     .font-text-account {
+//         font-size: 3rem;
+//     }
+//     .font-google {
+//         width: 4rem;
+//         height: 4rem;
+//     }
+//     .donecheck-image {
+//         width: 10rem;
+//         height: 10rem;
+//     }
+//     .input-email {
+//         padding-left: 2rem;
+//         padding-right: 2rem;
+//     }
+//     } 
+// @media screen and (min-width: 4200px){
+//     .font-lagre {
+//         font-size: 3.6rem;
+//     }
+//     input {
+//         &::placeholder {
+//             font-size: 3.2rem; 
+//         }
+//     }
+//     .font-text-account {
+//         font-size: 3.2rem;
+//     }
+//     }  
     
-@media screen and (min-width: 4500px){
-    .logo-image {
-        height: 9rem;
-    }
+// @media screen and (min-width: 4500px){
+//     .logo-image {
+//         height: 9rem;
+//     }
     
-    .font-lagre {
-        font-size: 3.8rem;
-    }
-    input {
-        &::placeholder {
-            font-size: 3.5rem; 
-        }
-    }
-    .font-text-account {
-        font-size: 3.5rem;
-    }
-    .font-google {
-        width: 5rem;
-        height: 5rem;
-        margin-top: 15px;
+//     .font-lagre {
+//         font-size: 3.8rem;
+//     }
+//     input {
+//         &::placeholder {
+//             font-size: 3.5rem; 
+//         }
+//     }
+//     .font-text-account {
+//         font-size: 3.5rem;
+//     }
+//     .font-google {
+//         width: 5rem;
+//         height: 5rem;
+//         margin-top: 15px;
 
-    }
-    .padding-form {
-        padding-left: 36rem; 
-        padding-right: 36rem;
-        padding-top: 20rem;
-    }
-    .line-height {
-        line-height: 4rem;
-    }
+//     }
+//     .padding-form {
+//         padding-left: 36rem; 
+//         padding-right: 36rem;
+//         padding-top: 20rem;
+//     }
+//     .line-height {
+//         line-height: 4rem;
+//     }
     
-    }   
-@media screen and (min-width: 5000px){
-    .logo-image {
-        height: 11rem;
-    }
-    .font-lagre {
-        font-size: 4.5rem;
-    }
-    input {
-        &::placeholder {
-            font-size: 4rem; 
-        }
-    }
-    .font-text-account {
-        font-size: 4rem;
-    }
-    .font-hello {
-        font-size: 7rem;
-        line-height: 1;
-        margin-bottom: 2.5rem;
-    }
-    .padding-form {
-        padding-top: 32rem;
-    }
-    }  
-@media screen and (min-width: 5500px){
-    .logo-image {
-        height: 11rem;
-    }
-    .font-lagre {
-        font-size: 3.8rem;
-    }
-    input {
-        &::placeholder {
-            font-size: 3.5rem; 
-        }
-    }
-    .font-text-account {
-        font-size: 3.5rem;
-    }
-    }
-@media screen and (min-width: 6000px){
-    .logo-image {
-        height: 12rem;
-    }
-    .font-lagre {
-        font-size: 5rem;
-    }
-    input {
-        &::placeholder {
-            font-size: 4rem; 
-        }
-    }
-    .font-text-account {
-        font-size: 4rem;
-    }
-    .font-hello {
-        font-size: 8rem;
-        line-height: 1;
-        margin-bottom: 2.5rem;
-    }
-    }                 
+//     }   
+// @media screen and (min-width: 5000px){
+//     .logo-image {
+//         height: 11rem;
+//     }
+//     .font-lagre {
+//         font-size: 4.5rem;
+//     }
+//     input {
+//         &::placeholder {
+//             font-size: 4rem; 
+//         }
+//     }
+//     .font-text-account {
+//         font-size: 4rem;
+//     }
+//     .font-hello {
+//         font-size: 7rem;
+//         line-height: 1;
+//         margin-bottom: 2.5rem;
+//     }
+//     .padding-form {
+//         padding-top: 32rem;
+//     }
+//     }  
+// @media screen and (min-width: 5500px){
+//     .logo-image {
+//         height: 11rem;
+//     }
+//     .font-lagre {
+//         font-size: 3.8rem;
+//     }
+//     input {
+//         &::placeholder {
+//             font-size: 3.5rem; 
+//         }
+//     }
+//     .font-text-account {
+//         font-size: 3.5rem;
+//     }
+//     }
+// @media screen and (min-width: 6000px){
+//     .logo-image {
+//         height: 12rem;
+//     }
+//     .font-lagre {
+//         font-size: 5rem;
+//     }
+//     input {
+//         &::placeholder {
+//             font-size: 4rem; 
+//         }
+//     }
+//     .font-text-account {
+//         font-size: 4rem;
+//     }
+//     .font-hello {
+//         font-size: 8rem;
+//         line-height: 1;
+//         margin-bottom: 2.5rem;
+//     }
+//     }                 
     

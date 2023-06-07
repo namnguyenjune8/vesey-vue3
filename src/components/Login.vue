@@ -5,14 +5,15 @@
 
   
     <section class="flex flex-col lg:flex-row h-screen items-center">
-      <div class="w-full md:max-w-md lg:max-w-full md:mx-auto  md:w-1/2 xl:w-1/2 h-screen">
-      <div class="mt-8">  
+      <div class="w-full md:max-w-md lg:max-w-full md:mx-auto  md:w-1/2 xl:w-1/2 h-screen grid">
+      
+        <div class="mt-8">  
       <a href="/" class=" md:mx-auto md:ml-5 lg:block">
     <img class="h-12 w-auto logo-image cursor-pointer logo-image" src="../assets/Logo.svg" alt="" />
       </a>
     </div>
-    <div class="bg-white p-20 px-6 lg:px-16 xl:px-36 max-md:pb-16   
-        block pt-12 padding-form mx-auto">
+    <div class="bg-white px-6 lg:px-16 xl:px-36 max-md:pb-16   
+        block pt-4 padding-form mx-auto">
 
   <div class="w-full h-100"> 
 
@@ -51,7 +52,7 @@
             <div v-if="successMessage" class="success">{{ successMessage }}</div>
     </form>
 
-    <hr class="my-6 border-gray-300 w-full">
+    <hr class="my-2 border-gray-300 w-full">
 
     <button type="button" class="w-full block bg-white hover:bg-gray-100 focus:bg-gray-100 text-gray-900 font-normal rounded-lg px-4 py-3 border border-gray-300
     min-[3200px]:border-2 min-[4300px]:py-6 min-[4300px]:rounded-2xl">
@@ -68,6 +69,7 @@
   </div>
   </div>
 </div>
+
 <div class="hidden lg:block w-full md:w-1/2 xl:w-1/2 h-screen p-4">
   <img src="../assets/image_login.jpg" alt="" class="page-image w-full h-full object-cover boder-radius-40px ">
 </div>

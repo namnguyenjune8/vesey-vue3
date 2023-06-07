@@ -4,12 +4,12 @@
     <div class="container mx-auto h-screen">
     
     <section class="flex flex-col md:flex-row h-screen items-center">
-      <div class="w-full md:max-w-md lg:max-w-full md:mx-auto  md:w-1/2 xl:w-1/2 h-screen">
-      <div class="md:mx-auto md:ml-5 lg:block">  
-    <a href="/">
+      <div class="w-full md:max-w-md lg:max-w-full md:mx-auto md:w-1/2 xl:w-1/2 h-screen grid">
+        <div class="mt-8">  
+      <a href="/" class=" md:mx-auto md:ml-5 lg:block">
     <img class="h-12 w-auto logo-image cursor-pointer logo-image" src="../assets/Logo.svg" alt="" />
-    </a>
-  </div>
+      </a>
+    </div>
 <div class="bg-white p-20 px-6 lg:px-16 xl:px-36 max-md:pb-16   
         block pt-12 padding-form mx-auto">
 

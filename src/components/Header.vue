@@ -64,8 +64,11 @@
               <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-indigo-50 ">{{ $t('Mẫu thiệp mời') }}</a>
               <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 ">{{ $t('Biểu phí') }}</a>
               <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 ">Blog</a>
+              <a href="#" class="w-112 relative font-inter font-normal text-base leading-6 text-center text-gray-700 flex-none order-1 flex-grow-0  ">
+                <SelectFlags />
+              </a>
             </div>
-            <div class="py-6">
+            <div class="py-6 mt-8">
               <a v-if="isLoggedIn" @click="logout" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">{{ $t('Đăng xuất') }}</a>
               <a v-else href="/login" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">{{ $t('Đăng nhập') }}</a>
             </div>

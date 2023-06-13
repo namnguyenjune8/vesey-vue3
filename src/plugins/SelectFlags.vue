@@ -1,10 +1,11 @@
 <template>
-  <div class="flag">
+  <div class="flag max-lg:mt-3">
     <div class="selected-flag" @click="toggleFlagList">
       <img :src="getFlagImage(selectedLanguage)" :alt="selectedLanguage" class="flag-icon" />
     </div>
-    <div class="flag-list z-50" v-show="showFlagList" :class="{ 'hidden': !showFlagList }">
-      <ul class="language-list border border-gray-200 shadow-lg bg-white flex flex-col justify-center items-center animate__animated" :class="{ 'animate__fadeIn': showFlagList, 'animate__fadeOut': !showFlagList }">
+    <div class="flag-list z-50 max-lg:mt-4" v-show="showFlagList" :class="{ 'hidden': !showFlagList }">
+      <ul class="language-list border border-gray-200 shadow-lg bg-white flex flex-col 
+      justify-center items-center animate__animated max-lg:ml-24 max-lg:flex-row "  :class="{ 'animate__fadeIn': showFlagList, 'animate__fadeOut': !showFlagList }">
         <li class="language-flag" v-for="language in supportedLanguages" :key="language" @click="selectLanguage(language)" :class="{ 'selected': language === selectedLanguage }">
           <img :src="getFlagImage(language)" :alt="language" class="flag-icon" />
         </li>

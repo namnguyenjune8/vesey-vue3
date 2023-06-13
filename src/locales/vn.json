@@ -109,8 +109,15 @@
       "products": {
         "Thiệp truyền thống": "Thiệp truyền thống",
         "Thiệp cưới": "Thiệp cưới"
+      },
+      "login": {
+        "success": "Đăng nhập thành công",
+        "invalidCredentials": "Tài khoản hoặc mật khẩu không chính xác"
+      },
+      "signup": {
+        "success": "Đăng ký thành công",
+        "invalidCredentials": "Mật khẩu không trùng khớp!"
       }
-     
 
 
 }

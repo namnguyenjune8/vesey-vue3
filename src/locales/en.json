@@ -113,6 +113,14 @@
       "products": {
         "Thiệp truyền thống": "Traditional Card",
         "Thiệp cưới": "Wedding Card"
+      },
+      "login": {
+        "success": "Logged in successfully",
+        "invalidCredentials": "Incorrect account or password"
+      },
+      "signup": {
+        "success": "Sign Up Success",
+        "invalidCredentials": "Password does not match!"
       }
       
 

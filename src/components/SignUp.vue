@@ -104,6 +104,7 @@
        // Kiểm tra xem password và password_comfirmation có khớp nhau không
     if (this.password !== this.password_confirmation) {
       this.$toast.error = 'Mật khẩu không trùng khớp!';
+      this.$toast.error(this.$t('signup.invalidCredentials'));
         return;
     }
       // Gọi API đăng ký và xử lý kết quả
@@ -120,7 +121,8 @@
       if (response.status === 400 && response.data.message === 'Username already exists') {
         this.$toast.error = 'Username already used, please choose another name';
       } else if (response.status === 200 && response.data.message === 'Sign Up Success!') {
-        this.$toast.success = 'Đăng ký thành công';
+        // this.$toast.success = 'Đăng ký thành công';
+        this.$toast.success(this.$t('signup.success'));
         this.errorMessage = ''; // xóa thông báo lỗi nếu có
       } else {
         throw new Error('Registration failed');

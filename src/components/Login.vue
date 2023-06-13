@@ -101,7 +101,8 @@ export default {
 
         if (response.status === 200 && response.data.token) {
           localStorage.setItem('accessToken', response.data.token);
-          this.$toast.success('Đăng nhập thành công');
+          // this.$toast.success('Đăng nhập thành công');
+          this.$toast.success(this.$t('login.success'));
 
           this.$router.push('/');
         } else {
@@ -109,8 +110,9 @@ export default {
         }
       } catch (error) {
         console.log(error);
-        
-        this.$toast.error('Tài khoản hoặc mật khẩu không chính xác');
+        this.$toast.error(this.$t('login.invalidCredentials'));
+
+        // this.$toast.error('Tài khoản hoặc mật khẩu không chính xác');
       }
     },
   },

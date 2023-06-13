@@ -109,6 +109,15 @@
      "products": {
          "Thiệp truyền thống": "Cartes traditionnelles",
          "Thiệp cưới": "Cartes de mariage"
-     }
+     },
+    
+     "login": {
+        "success": "Connecté avec succès",
+        "invalidCredentials": "Compte ou mot de passe incorrect"
+      },
+      "signup": {
+        "success": "Succès de l'inscription",
+        "invalidCredentials": "Le mot de passe ne correspond pas!"
+      }
 
 }

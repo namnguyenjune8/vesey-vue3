@@ -251,20 +251,20 @@ $primarycolor: #F5F5F5;
 }
 @media screen and (min-width: 640px) and (max-width:768px){
   .paddingLR {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 7rem;
+    padding-right: 8rem;
   }
 }
 @media screen and (min-width: 590px) and (max-width:639px){
   .paddingLR {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 @media screen and (min-width: 550px) and (max-width:589px){
   .paddingLR {
     padding-left: 3rem;
-    padding-right: 3rem;
+    padding-right: 4rem;
   }
 }
 @media screen and (min-width: 520px) and (max-width:549px){
@@ -275,7 +275,7 @@ $primarycolor: #F5F5F5;
 }
 @media screen and (min-width: 500px) and (max-width:519px){
   .paddingLR {
-    padding-left: 1rem;
+    padding-left: 0.7rem;
     padding-right: 1rem;
   }
 }

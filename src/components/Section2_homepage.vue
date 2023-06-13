@@ -6,12 +6,14 @@
         <h2 class="font-inter not-italic font-extrabold text-4xl tracking-tight text-slate-900 sm:text-3xl" 
            data-aos="fade-up"
            data-aos-duration="1000"
-        >MẪU THIỆP MỜI
+        >{{ $t('MẪU THIỆP MỜI') }}
+  
         </h2>
         <p class="font-inter not-italic font-normal mt-4 text-xl tracking-tight text-gray-400"
            data-aos="fade-up"
            data-aos-duration="1500"
-        >Tạo thiệp mời chỉ trong nháy mắt cùng Vesey
+        >{{ $t('Tạo thiệp mời chỉ trong nháy mắt cùng Vesey') }}
+
         </p>
       </div>
       <div class="flex justify-center flex-col mt-12">
@@ -22,23 +24,28 @@
   >
     <label class="flex items-center py-1 px-4 bg-gray-200 cursor-pointer label_checked">
       <input class="hidden" type="radio" checked value="all">
-      <span class="text-gray-700">Tất cả</span>
+      <span class="text-gray-700">{{ $t('Tất cả') }}
+</span>
     </label>
     <label class="flex items-center py-1 px-4 bg-gray-200 cursor-pointer">
       <input class="hidden" type="radio" value="wedding">
-      <span>Đám cưới</span>
+      <span>{{ $t('Đám cưới') }}
+</span>
     </label>
     <label class="flex items-center py-1 px-4 bg-gray-200 cursor-pointer">
       <input class="hidden" type="radio" value="birthdate">
-      <span>Sinh nhật</span>
+      <span>{{ $t('Sinh nhật') }}
+</span>
     </label>
     <label class="flex items-center py-1 px-4 bg-gray-200 cursor-pointer">
       <input class="hidden" type="radio" value="anniversary">
-      <span>Kỷ niệm</span>
+      <span>{{ $t('Kỷ niệm') }}
+</span>
     </label>
     <label class="flex items-center py-1 px-4 bg-gray-200 cursor-pointer">
       <input class="hidden" type="radio" value="event">
-      <span>Sự kiện</span>
+      <span>{{ $t('Sự kiện') }}
+</span>
     </label>
   </div>
 </div>
@@ -57,8 +64,10 @@
     <div v-if="product.showOverlay" class="absolute inset-0 bg-white bg-opacity-80 flex items-center justify-center z-10 ">
       <div class="flex flex-col items-center space-y-4 ">
         <!-- Nội dung overlay -->
-        <button class="px-6 py-3.5 w-full bg-indigo-600 text-white rounded-3xl shadow-md hover:bg-indigo-400 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Tạo thiệp mời</button>
-        <button class="px-6 py-3.5 w-full bg-white text-indigo-600 rounded-3xl border border-blue-600 shadow-sm hover:bg-gray-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Xem mẫu thiệp</button>
+        <button class="px-6 py-3.5 w-full bg-indigo-600 text-white rounded-3xl shadow-md hover:bg-indigo-400 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">{{ $t('Tạo thiệp mời') }}
+</button>
+        <button class="px-6 py-3.5 w-full bg-white text-indigo-600 rounded-3xl border border-blue-600 shadow-sm hover:bg-gray-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">{{ $t('Xem mẫu thiệp') }}
+</button>
       </div>
     </div>
     <div class="absolute top-auto pb-8 bottom-0 inset-0 bg-gradient-to-t from-neutral-950 to-transparent opacity-100">

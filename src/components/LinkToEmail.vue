@@ -15,8 +15,8 @@
       
       <div class="w-full h-100 flex flex-col items-center justify-center text-center">
   <img src="../assets/donecheck.svg" alt="" class="object-fill border-radius-40px donecheck-image">
-  <h1 class="text-lg md:text-2xl font-normal font-inter leading-tight mt-4 pb-4 2xl:mb-4 font-hello">Gửi link đến Email thành công!</h1>
-  <span class="font-inter font-normal text-sm text-gray-500 font-lagre leading">Đường link đặt lại mật khẩu đã được gửi tới email của bạn. Vui lòng kiểm tra Thư rác nếu không tìm thấy mail trong Hộp thư đến.</span>
+  <h1 class="text-lg md:text-2xl font-normal font-inter leading-tight mt-4 pb-4 2xl:mb-4 font-hello">{{ $t('Gửi link đến Email thành công!') }}</h1>
+  <span class="font-inter font-normal text-sm text-gray-500 font-lagre leading">{{ $t('Đường link đặt lại mật khẩu đã được gửi tới email của bạn. Vui lòng kiểm tra Thư rác nếu không tìm thấy mail trong Hộp thư đến.') }}</span>
 </div>
 </div>
 </div>

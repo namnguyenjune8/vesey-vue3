@@ -21,7 +21,7 @@
                 <div class="flex h-full flex-col overflow-y-scroll bg-white shadow-xl">
                   <div class="flex-1 overflow-y-auto px-4 py-6 sm:px-6">
                     <div class="flex items-start justify-between">
-                      <DialogTitle class="text-lg font-medium text-gray-900">Notification</DialogTitle>
+                      <DialogTitle class="text-lg font-medium text-gray-900">{{ $t('Notification') }}</DialogTitle>
                       <div class="ml-3 flex h-7 items-center">
                         <button type="button" class="-m-2 p-2 text-gray-400 hover:text-gray-500" @click="open = false">
                           <span class="sr-only">Close panel</span>

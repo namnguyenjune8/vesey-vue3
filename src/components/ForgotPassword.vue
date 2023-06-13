@@ -16,8 +16,8 @@
   <div class="w-full h-100">
 
 
-    <h1 class="text-3xl md:text-5xl font-normal font-inter leading-tight mt-12 2xl:mb-4 font-hello mb-4">Quên mật khẩu</h1>
-    <span class="font-inter font-normal text-base text-gray-400 font-lagre leading ">Vui lòng nhập email bạn đã đăng ký tại đây và chúng tôi sẽ gửi link đặt lại mật khẩu vào email của bạn.</span>
+    <h1 class="text-3xl md:text-5xl font-normal font-inter leading-tight mt-12 2xl:mb-4 font-hello mb-4">{{ $t('Quên mật khẩu') }}</h1>
+    <span class="font-inter font-normal text-base text-gray-400 font-lagre leading ">{{ $t('Vui lòng nhập email bạn đã đăng ký tại đây và chúng tôi sẽ gửi link đặt lại mật khẩu vào email của bạn.') }}</span>
 
     <form @submit.prevent="resetPassword" class="mt-6" action="#" method="POST">
       <div>
@@ -26,10 +26,10 @@
         focus:outline-none input-email font-email " v-model="email" autofocus autocomplete required>
       </div>
       <a href="/sendlinktoemail" type="submit" class="w-full block bg-indigo-500 hover:bg-indigo-400 focus:bg-indigo-400 text-white font-semibold rounded-lg
-            px-4 py-3 mt-6 font-lagre text-center">Đặt lại mật khẩu</a>
+            px-4 py-3 mt-6 font-lagre text-center">{{ $t('Đặt lại mật khẩu') }}</a>
     </form>
 
-    <p class="mt-8 flex justify-center font-lagre">Bạn chưa có tài khoản? <a href="/signup" class="text-blue-500 hover:text-blue-700 font-semibold font-lagre">Tạo tài khoản</a></p>
+    <p class="mt-8 flex justify-center font-lagre">{{ $t('Bạn chưa có tài khoản?') }} <a href="/signup" class="text-blue-500 hover:text-blue-700 font-semibold font-lagre">{{ $t('Tạo tài khoản') }}</a></p>
 
 
   </div>

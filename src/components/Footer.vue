@@ -2,11 +2,11 @@
     <footer class="bg-gray-800">
       <div class="pt-16 flex flex-col items-center">
         <div class="mb-6 flex cursor-pointer max-md:flex-col max-md:items-center max-md:gap-2 space-x-4 font-inter not-italic font-normal text-base text-gray-300 dark:text-gray-400">
-          <a class="hover:text-gray-200 ">Mẫu thiệp mời</a>
-          <a class="hover:text-gray-200 ">Biểu phí</a>
+          <a class="hover:text-gray-200 ">{{ $t('Mẫu thiệp mời') }}</a>
+          <a class="hover:text-gray-200 ">{{ $t('Biểu phí') }}</a>
           <a class="hover:text-gray-200 ">Blog</a>
           <a class="hover:text-gray-200 ">FAQs</a>
-          <a class="hover:text-gray-200 ">Điều khoản và chính sách</a>
+          <a class="hover:text-gray-200 ">{{ $t('Điều khoản và chính sách') }}</a>
         </div>
         <div class="mb-3 flex space-x-4 flex-wrap">
           <a class="text-sm text-gray-500 transition hover:text-gray-600" target="_blank" rel="noopener noreferrer" href="mailto:address@yoursite.com">

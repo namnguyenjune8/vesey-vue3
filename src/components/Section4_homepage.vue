@@ -1,4 +1,5 @@
 <template>
+  
     <section class="bg-white pb-12">
       <div class="container  min-[500px]:px-8 mx-auto xl:px-5 bg-white  py-6 lg:py-14">
         <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
@@ -8,9 +9,12 @@
               <span class="cursor">&nbsp;</span>
           </h2>
         </div>
-                <div class="mt-10 grid gap-10 md:grid-cols-2 lg:gap-10 xl:grid-cols-3 paddingLR">
-                 <div class="group cursor-pointer bg-white shadow-lg rounded-2xl relative min-[456px]:w-full min-[450px]:w-11/12 min-[385px]:w-10/12 min-[300px]:w-9/12 min-[289px]:w-8/12 min-[260px]:w-3/5 min-[252px]:w-7/12 min-[215px]:w-6/12 min-[0px]:w-5/12">
-                   <div class=" overflow-hidden rounded-md bg-gray-100 transition-all dark:bg-gray-800">
+                        <div class="mt-10 grid gap-10 md:grid-cols-2 lg:gap-10 xl:grid-cols-3 paddingLR">
+                        <div class="group cursor-pointer bg-white shadow-lg rounded-2xl relative min-[456px]:w-full min-[450px]:w-11/12 
+                          min-[385px]:w-10/12 min-[300px]:w-9/12 min-[289px]:w-67 min-[285px]:w-62 
+                          min-[260px]:w-3/5 min-[252px]:w-7/12 min-[240px]:w-53 min-[231px]:w-52 min-[220px]:w-51
+                           min-[215px]:w-50 min-[210px]:w-47 min-[203px]:w-45 min-[0px]:w-43">
+                   <div class=" overflow-hidden rounded-md bg-gray-100 transition-all dark:bg-gray-800  ">
                       <a class="relative block aspect-square image-font" href="/post/14-architectural-design-ideas-for-spacious-interior">
                         <img alt="Thumbnail" loading="lazy" decoding="async" data-nimg="fill" class="object-cover transition-all" 
                         sizes="(max-width: 768px) 30vw, 33vw"  src="../assets/7.jpg" style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"
@@ -22,19 +26,20 @@
                       <div>
                         <div class="flex gap-3">
                           <a href="/category/design">
-                            <span class="inline-block font-inter text-sm font-medium tracking-wider mt-5 text-indigo-600">Đám cưới</span>
+                            <span class="inline-block font-inter text-sm font-medium tracking-wider mt-5 text-indigo-600">{{ $t('Đám cưới') }}</span>
                             </a>
                               </div>
                               <div class="mb-12">
                               <h2 class="text-lg font-semibold leading-snug tracking-tight mt-2    dark:text-white">
                             <a href="/post/14-architectural-design-ideas-for-spacious-interior">
                               <span class="bg-gradient-to-r from-green-200 to-green-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-purple-800 dark:to-purple-900">
-                                Review chân thật nhà hàng tiệc cưới White Palace
+                                {{ $t('Review chân thật nhà hàng tiệc cưới White Palace') }}
                               </span>
                               </a>
                               </h2>
                               <h3 class=" not-italic font-normal text-gray-500 text-base">
-                                Được biết đến là một trong những nhà hàng tiệc cưới sang trọng bậc nhất Sài Thành, White Palace là lựa chọn hoàn hảo cho các cặp đôi yêu thích không gian kiến trúc hiện đại, lung linh.
+                                {{ $t('Được biết đến là một trong những nhà hàng tiệc cưới sang trọng bậc nhất Sài Thành, White Palace là lựa chọn hoàn hảo cho các cặp đôi yêu thích không gian kiến trúc hiện đại, lung linh.') }}
+                                
                               </h3>
                             </div>
                               <div class="hidden">
@@ -48,15 +53,18 @@
                                         <img alt="Đàm Vĩnh Hưng" loading="lazy" decoding="async" data-nimg="fill" class="w-10 h-10 rounded-2xl object-cover" sizes="20px" 
                                         src="../assets/avatar1.jpg" style="position: absolute; max-width: 40px; inset: 0px; color: transparent;"></div>
                                           <div class="flex flex-col ml-4">
-                                            <span class="truncate text-sm">Đàm Vĩnh Hưng</span>
-                                            <time class="truncate text-sm" datetime="2022-10-21T06:05:00.000Z">Cách đây 2 giờ</time>
+                                            <span class="truncate text-sm">{{ $t('Đàm Vĩnh Hưng') }}</span>
+                                            <time class="truncate text-sm" datetime="2022-10-21T06:05:00.000Z">{{ $t('Cách đây 2 giờ') }}</time>
                                           </div>
                                         </div>
                                         </div>
                                         </div>
                                         </div>
                          </div>
-                         <div class="group cursor-pointer bg-white shadow-lg rounded-2xl relative min-[456px]:w-full min-[450px]:w-11/12 min-[385px]:w-10/12 min-[300px]:w-9/12 min-[289px]:w-8/12 min-[260px]:w-3/5 min-[252px]:w-7/12 min-[215px]:w-6/12 min-[0px]:w-5/12">
+                         <div class="group cursor-pointer bg-white shadow-lg rounded-2xl relative min-[456px]:w-full min-[450px]:w-11/12
+                           min-[385px]:w-10/12 min-[300px]:w-9/12 min-[289px]:w-67 min-[285px]:w-62 
+                           min-[260px]:w-3/5 min-[252px]:w-7/12 min-[240px]:w-53 min-[231px]:w-52 min-[220px]:w-51
+                           min-[215px]:w-50 min-[210px]:w-47 min-[203px]:w-45 min-[0px]:w-43">
                    <div class=" overflow-hidden rounded-md bg-gray-100 transition-all dark:bg-gray-800">
                       <a class="relative block aspect-square image-font" href="/post/14-architectural-design-ideas-for-spacious-interior">
                         <img alt="Thumbnail" loading="lazy" decoding="async" data-nimg="fill" class="object-cover transition-all" 
@@ -68,19 +76,20 @@
                       <div>
                         <div class="flex gap-3">
                           <a href="/category/design">
-                            <span class="inline-block font-inter text-sm font-medium tracking-wider mt-5 text-indigo-600">Trending</span>
+                            <span class="inline-block font-inter text-sm font-medium tracking-wider mt-5 text-indigo-600">{{ $t('Xu hướng') }}</span>
                             </a>
                               </div>
                               <div class="mb-12">
                               <h2 class="text-lg font-semibold leading-snug tracking-tight mt-2    dark:text-white">
                             <a href="/post/14-architectural-design-ideas-for-spacious-interior">
                               <span class="bg-gradient-to-r from-green-200 to-green-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-purple-800 dark:to-purple-900">
-                                Phim trường Santorini Park - Địa điểm chụp ảnh cưới tuyệt đẹp
+                                {{ $t('Phim trường Santorini Park - Địa điểm chụp ảnh cưới tuyệt đẹp') }}
                               </span>
                               </a>
                               </h2>
                               <h3 class=" not-italic font-normal text-gray-500 text-base">
-                                Thời gian gần đây, phim trường Santorini park nổi lên là tọa độ chụp hình cưới vô cùng mới mẻ và độc đáo dành cho các cặp đôi. Với thiết kế được lấy cảm hứng từ hòn đảo Santorini thu nhỏ, xinh đẹp và êm đềm của Địa Trung Hải. 
+                                {{ $t('Thời gian gần đây, phim trường Santorini park nổi lên là tọa độ chụp hình cưới vô cùng mới mẻ và độc đáo dành cho các cặp đôi. Với thiết kế được lấy cảm hứng từ hòn đảo Santorini thu nhỏ, xinh đẹp và êm đềm của Địa Trung Hải.') }}
+                                
                               </h3>
                             </div>
                               <div class="hidden">
@@ -94,7 +103,7 @@
                                         <img alt="Hồ Ngọc Hà" loading="lazy" decoding="async" data-nimg="fill" class="w-10 h-10 rounded-2xl object-cover " sizes="20px" 
                                         src="../assets/avatar2.jpg" style="position: absolute; max-width: 40px; inset: 0px; color: transparent;"></div>
                                           <div class="flex flex-col ml-4">
-                                            <span class="truncate text-sm">Hồ Ngọc Hà</span>
+                                            <span class="truncate text-sm">{{ $t('Hồ Ngọc Hà') }}</span>
                                             <time class="truncate text-sm" datetime="2022-10-21T06:05:00.000Z">12/4/2022</time>
                                           </div>
                                         </div>
@@ -102,7 +111,10 @@
                                         </div>
                                         </div>
                          </div>
-                         <div class="group cursor-pointer bg-white shadow-lg rounded-2xl relative min-[456px]:w-full min-[450px]:w-11/12 min-[385px]:w-10/12 min-[300px]:w-9/12 min-[289px]:w-8/12 min-[260px]:w-3/5 min-[252px]:w-7/12 min-[215px]:w-6/12 min-[0px]:w-5/12">
+                         <div class="group cursor-pointer bg-white shadow-lg rounded-2xl relative min-[456px]:w-full min-[450px]:w-11/12
+                           min-[385px]:w-10/12 min-[300px]:w-9/12 min-[289px]:w-67 min-[285px]:w-62 
+                           min-[260px]:w-3/5 min-[252px]:w-7/12 min-[240px]:w-53 min-[231px]:w-52 min-[220px]:w-51
+                           min-[215px]:w-50 min-[210px]:w-47 min-[203px]:w-45 min-[0px]:w-43">
                    <div class=" overflow-hidden rounded-md bg-gray-100 transition-all dark:bg-gray-800">
                       <a class="relative block aspect-square image-font" href="/post/14-architectural-design-ideas-for-spacious-interior">
                         <img alt="Thumbnail" loading="lazy" decoding="async" data-nimg="fill" class="object-cover transition-all" 
@@ -114,19 +126,20 @@
                       <div>
                         <div class="flex gap-3">
                           <a href="/category/design">
-                            <span class="inline-block font-inter text-sm font-medium tracking-wider mt-5 text-indigo-600">Đám cưới</span>
+                            <span class="inline-block font-inter text-sm font-medium tracking-wider mt-5 text-indigo-600">{{ $t('Đám cưới') }}</span>
                             </a>
                               </div>
                               <div class="mb-12">
                               <h2 class="text-lg font-semibold leading-snug tracking-tight mt-2    dark:text-white">
                             <a href="/post/14-architectural-design-ideas-for-spacious-interior">
                               <span class="bg-gradient-to-r from-green-200 to-green-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-purple-800 dark:to-purple-900">
-                                Top 10 mẫu trang phục đi đám cưới cho nam thịnh hành năm 2022
+                                {{ $t('Top 10 mẫu trang phục đi đám cưới cho nam thịnh hành năm 2022') }}
                               </span>
                               </a>
                               </h2>
                               <h3 class=" not-italic font-normal text-gray-500 text-base">
-                                Mỗi khi nhận được tấm thiệp cưới thì câu hỏi đầu tiên mà các chàng trai luôn đặt ra đó là “nam giới đi đám cưới mặc gì?”.
+                                {{ $t('Mỗi khi nhận được tấm thiệp cưới thì câu hỏi đầu tiên mà các chàng trai luôn đặt ra đó là “nam giới đi đám cưới mặc gì?”.') }}
+                                
                               </h3>
                             </div>
                               <div class="hidden">
@@ -140,7 +153,7 @@
                                         <img alt="Lệ Quyên" loading="lazy" decoding="async" data-nimg="fill" class="w-10 h-10 rounded-2xl object-cover " sizes="20px" 
                                         src="../assets/avatar3.jpg" style="position: absolute; max-width: 40px; inset: 0px; color: transparent;"></div>
                                           <div class="flex flex-col ml-4">
-                                            <span class="truncate text-sm">Lệ Quyên</span>
+                                            <span class="truncate text-sm">{{ $t('Lệ Quyên') }}</span>
                                             <time class="truncate text-sm" datetime="2022-10-21T06:05:00.000Z">12/12/2022</time>
                                           </div>
                                         </div>
@@ -153,6 +166,7 @@
                                                                                                                                                                 
                                                                                                                                                                                                                                                                                                   
     </section>
+  
 </template>
 <script>
 export default {
@@ -170,7 +184,7 @@ export default {
     const typedTextSpan = document.querySelector(".typed-text");
     const cursorSpan = document.querySelector(".cursor");
 
-    const textArray = [ "Bài viết từ Vesey"];
+    const textArray = [ "Vesey Blog"];
     const typingDelay = 50;
     const erasingDelay = 50;
     const newTextDelay = 500;

@@ -13,7 +13,7 @@ const routes = [
     name: 'HomePage',
     component: Homepage,
     meta: {
-      title: 'Trang chủ Vesey'
+      title: 'Vesey Create Invitations Cards'
     }
   },
   {
@@ -21,7 +21,7 @@ const routes = [
     name: 'Login',
     component: Login,
     meta: {
-      title: 'Đăng nhập'
+      title: 'Login'
     }
   },
   {
@@ -29,7 +29,7 @@ const routes = [
     name: 'SignUp',
     component: SignUp,
     meta: {
-      title: 'Đăng ký'
+      title: 'Register'
     }
   },
   {
@@ -37,7 +37,7 @@ const routes = [
     name: 'ForgotPassword',
     component: ForgorPassword,
     meta: {
-      title: 'Tìm mật khẩu'
+      title: 'Find password'
     }
   },
   {
@@ -45,7 +45,7 @@ const routes = [
     name: 'LinkToEmail',
     component: LinkToEmail,
     meta: {
-      title: 'Cập nhật mật khẩu'
+      title: 'Update password'
     }
   },
   
@@ -70,6 +70,9 @@ const router = createRouter({
   history: createWebHistory(),
   routes,
 });
+
+
+
 
 
 export default router

@@ -1,6 +1,9 @@
 <template>
+  
     <div class="hidden lg:flex lg:flex-1 lg:justify-end items-center">
+      
       <div v-if="isLoggedIn">
+        
         <Notification />
       </div>  
       <div class="relative" @click="toggleDropdown">
@@ -8,23 +11,26 @@
           <div class="flex -space-x-2 overflow-hidden">
             <img :src="avatarUrl" alt="Avatar" class="inline-block h-10 w-10 rounded-full ring-2 ring-white" />
           </div>
-          <div v-if="isDropdownOpen" class="absolute right-0 mt-2 py-2 w-48 bg-white border border-gray-200 shadow-lg rounded-lg z-10">
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Thông tin cá nhân</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Đổi mật khẩu</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" @click="logout">Đăng xuất</a>
+          <div v-if="isDropdownOpen" class="absolute right-0 mt-2 py-2 w-48 bg-white border border-gray-200 shadow-lg rounded-lg z-50">
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">{{ $t('Thông tin tài khoản') }}</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">{{ $t('Đổi mật khẩu') }}</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" @click="logout">{{ $t('Đăng xuất') }}</a>
           </div>
         </a>
      <div v-else class="hidden lg:flex lg:flex-1 lg:justify-end">
+      
         <a href="/login" type="submit" class="flex-none rounded-md bg-indigo-500 px-9 py-4 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400
-         focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Đăng nhập</a>
+         focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">{{ $t('Đăng nhập') }}</a>
        </div>    
        </div>
-      
+       
     </div>
+    
   </template>
   
   <script>
   import jwt_decode from 'jwt-decode'
+
   import Notification from './Notification.vue'
   export default {
     components: {
